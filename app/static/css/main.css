@@ -1,0 +1,229 @@
+h1,h2,h3,p,a{
+  font-family: 'Noto Serif JP', serif;
+}
+
+h1{
+    color: aqua;
+    font-size: 50px;
+}
+
+.pc h1{
+  margin-top: 100px;
+}
+
+.main > h2{
+    color: burlywood;
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+body {
+    background: whitesmoke;
+    margin: 0em;
+    height: 100vh;
+}
+
+header{
+    display:flex;
+    /* background-color: #009877; */
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    border-bottom:solid 2px #009877;
+
+}
+header h1{
+    margin-right:auto;
+    margin-left: 20px;
+    color: black;
+}
+
+header div{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    width: 170px;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+ul{
+  margin-top: 50px;
+}
+
+li {
+  font-size: 30px;
+  color: #111;
+}
+
+.cp_hr05 {
+	position: relative;
+	height: 1px;
+	border-width: 0;
+	background-color: #00bcd4;
+	background-image: -webkit-linear-gradient(left,
+	#00bcd4 0%,#283593 50%,#00bcd4 100%);
+	background-image:         linear-gradient(90deg,
+  #00bcd4 0%,#283593 50%,#00bcd4 100%);
+  width: 70%;
+}
+
+
+  
+  header a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #009877;
+    transition: .3s;
+    transform: translateX(-50%);
+  }
+  
+  header a:hover::after{
+    width: 100%;
+  }
+  header a {
+    color: black;
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+    text-decoration: none;
+  }
+  
+  /* ページ遷移時のアニメーション */
+  #page-animate::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 251, 255);
+    z-index: 9999;
+    pointer-events: none;
+    right: 100%;
+    -webkit-transition: right 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: right 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+   }
+    #page-animate::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 251, 255);
+    z-index: 9999;
+    pointer-events: none;
+    left: 100%;
+    -webkit-transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+   }
+    #page-animate.is-slide-in::before {
+    right: 0;
+   }
+    #page-animate.is-slide::after {
+    left: 0;
+   }
+
+   body > div {
+    box-sizing: border-box;
+    color: #FFF;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5%;
+  }
+  /* .parallax-bg {
+    background-image: url('/static/images/campus.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+   
+  /*スクロールするコンテンツ*/
+  .scrollbox {
+    background-color: #111;
+  }
+
+  .right{
+    background-color: #31aae2;
+  }
+
+  .top{
+    padding-top: 150px;
+    background-attachment: fixed;
+    background-image: url('/static/images/campus3.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+    width: 100%;
+    height: 80%;
+  }
+
+  .main{
+    width: 75%;
+    margin-right: 0;
+    height: 100%;
+  }
+
+  .description{
+    width: 100%;
+    height: 580px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .content{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+
+  .content > h2 {
+    color: rgb(81, 100, 101);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-decoration:underline;
+    text-decoration-color:#009877;
+  }
+  .content > p{
+      color: rgb(81, 100, 101);
+      font-size: 20px;
+      text-align: center;
+    }
+
+  .ans > li{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .main > p{
+    font-size: 20px;
+    color: cornflowerblue;
+    text-align: left;
+  }
+  .main > a{
+    font-size: 20px;
+    color: darkgoldenrod;
+    text-align: center;
+  }
+
+  .logo{
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+
+  .head{
+    color: #009877;
+    padding-top: 100px;
+  }

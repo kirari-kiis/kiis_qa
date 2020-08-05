@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <title>九州情報大学Q&A</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    </head>
+    <body class="is-slide" id="page-animate">
+    <header id='header'>
+        <h1><a href="/index">九州情報大学Q&A</a></h1>
+        
+            <div><a href="/pc_info">PCについて</a></div>
+            <div><a href="/nw_info">ネットワークについて</a></div>
+            <div><a href="/school_info">学校生活について</a></div>
+            <div>LINE</div>
+       
+    </header>
+ 
+    <div class="flex">
+        
+        {% block content %}{% endblock %}
+        <script src="/static/js/change.js"></script>
+    </div>
+    </body>
+</html>
