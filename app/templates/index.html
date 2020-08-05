@@ -1,14 +1,46 @@
-{% extends "layout.html" %}
-{% block content %}
-    <div class="top">
-    </div>
-    <div class="description">
-        <div class="content">
-            <h2>こちらは九州情報大学のQ&Aサイトです！</h2>
-            <p>九州情報大学の学生はPCを一人一台もっています。しかし、PCの設定などわからないことも多いですよね.
-                そんな疑問を解決するために作ったのがこのサイトです！PCやネットワークの設定方法のほか、学生生活での
-                疑問にも答えています。わからないことがあればこのサイトを見て参考にしてください！
-            </p>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <title>九州情報大学Q&A</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    </head>
+
+    <body>
+     
+        <div class="top">
+            <h1>KIIS Q&A</h1>
+            <a href="#bottom"><span></span></a>
         </div>
-    </div>
-{% endblock %}
+        <div class="description"　>
+            <div class="content" id="bottom">
+                <h2>こちらは九州情報大学のQ&Aサイトです！</h2>
+                <p class="moji">九州情報大学の学生はPCを一人一台もっています。しかし、PCの設定や操作などわからないことも多いですよね.
+                    そんな疑問を解決するために作ったのがこのサイトです！PCやネットワークの設定方法のほか、学生生活での
+                    疑問にも答えています。わからないことがあればこのサイトを見て参考にしてください！
+                </p>
+            </div>
+        </div>
+    <!-- ページトップへ戻るボタン -->
+    <p class="pagetop" style="display: block;">
+    <a href="#">
+    <i class="fas fa-chevron-up"></i>
+    </a>
+    </p>
+    <footer>
+        <h1><a href="/index">KIIS Q&A</a></h1>
+        
+        <div><a href="/pc_info">PCについて</a></div>
+        <div><a href="/nw_info">ネットワークについて</a></div>
+        <div><a href="/school_info">学校生活について</a></div>
+        <div>LINE</div>
+    </footer>
+  
+    </body>
+    <script src="/static/js/change.js"></script>
+    <script src="/static/js/main.js"></script>
+</html>
