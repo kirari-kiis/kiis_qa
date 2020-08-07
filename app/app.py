@@ -1,7 +1,7 @@
 #Flaskとrender_template（HTMLを表示させるための関数）をインポート
 from flask import Flask,render_template
 from flask_httpauth import HTTPBasicAuth
-import os
+# import os
 #Flaskオブジェクトの生成
 app = Flask(__name__)
 auth = HTTPBasicAuth()
@@ -59,4 +59,4 @@ def office_pcc():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    app.run(host='0.0.0.0', port=port)
