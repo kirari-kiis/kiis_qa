@@ -18,11 +18,6 @@ def get_pw(username):
         return users.get(username)
     return None
 
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
-                               'favicon.ico', mimetype='image/png')
-
 #「/」へアクセスがあった場合に、"Hello World"の文字列を返す
 @app.route("/")
 def hello():
