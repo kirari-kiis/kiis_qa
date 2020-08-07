@@ -58,5 +58,5 @@ def office_pcc():
 
 
 
-if __name__ == '__main__':
-    app.run()
+if __name__ == "__main__":
+   app.run(port=os.environ.get('PORT', 5000))
