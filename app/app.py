@@ -44,16 +44,31 @@ def nw_info():
 def school_info():
     return render_template("school_info.html")
 
-#「/office」へアクセスがあった場合に、「office_std.html」の文字列を返す
-@app.route("/office")
+#「/install_office」へアクセスがあった場合に、「install_std.html」の文字列を返す
+@app.route("/install_office")
 def office_std():
-    return render_template("office_std.html")
+    content = "Office"
+    office_url = "OfficeURL"
+    return render_template("install_std.html", content=content,office_url=office_url)
+
+#「/install_virusbuster」へアクセスがあった場合に、「install_std.html」の文字列を返す
+@app.route("/install_virusbuster")
+def virusbuster_std():
+    content = "ウイルスバスター"
+    virus_url = "VirusBusterURL"
+    return render_template("install_std.html", content=content,virus_url=virus_url)
 
 #「/office_pcc」へアクセスがあった場合に、「office_pcc.html」の文字列を返す
 @app.route("/office_pcc")
 @auth.login_required
 def office_pcc():
     return render_template("office_pcc.html")
+
+#「/virusbuster_pcc」へアクセスがあった場合に、「virusbuster_pcc.html」の文字列を返す
+@app.route("/virusbuster_pcc")
+@auth.login_required
+def virusbuster_pcc():
+    return render_template("virusbuster_pcc.html")
 
 
 

@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 
-h1,h2,h3,p,a{
+h1,h2,h3,p,a,li{
   font-family: 'Noto Serif JP', serif;
 }
 
@@ -42,7 +42,7 @@ h1{
 }
 
 .main > h2{
-    color: #f3d18a;
+    color: #000;
     font-size: 40px;
     margin: 0 auto;
     text-align: center;
@@ -310,7 +310,7 @@ li {
 
 
 footer h1{
-  margin-right:auto;
+  margin-right:20%;
   margin-left: 20px;
   color: black;
 }
@@ -318,8 +318,7 @@ footer h1{
 footer div{
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 10px;
-  width: 170px;
+  width: 150px;
   height: 30px;
   text-align: center;
   color: black;
@@ -347,4 +346,32 @@ footer a {
   display: inline-block;
   transition: .3s;
   text-decoration: none;
+}
+
+
+.ans a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #009877;
+  transition: .3s;
+  transform: translateX(-50%);
+}
+
+.ans a:hover::after{
+  width: 100%;
+}
+.ans a {
+  color: black;
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  text-decoration: none;
+}
+
+a > li {
+  font-size: 20px;
 }
