@@ -70,6 +70,11 @@ def office_pcc():
 def virusbuster_pcc():
     return render_template("virusbuster_pcc.html")
 
+#「/setup」へアクセスがあった場合に、「setup.html」の文字列を返す
+@app.route("/setup")
+def setup():
+    return render_template("setup.html")
+
 
 
 if __name__ == '__main__':
