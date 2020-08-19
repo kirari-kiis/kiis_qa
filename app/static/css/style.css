@@ -85,6 +85,7 @@
 
   .top{
     background-image: url('/static/images/campus3.png');
+    background-size: cover;
   }
 
 }
