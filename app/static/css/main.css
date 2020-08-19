@@ -14,7 +14,7 @@ h1{
 
 .top > h1{
   font-size: 150px;
-  color: #111;
+  color: #333;
   margin: 0 auto;
   text-align: center;
   letter-spacing: 10px;
@@ -43,11 +43,10 @@ h1{
 }
 
 .main > h2{
-    color: #000;
-    font-size: 40px;
+    color: #333;
+    font-size: 30px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 200px;
 }
 
 body {
@@ -69,7 +68,7 @@ header{
 header h1{
     margin-right:auto;
     margin-left: 20px;
-    color: black;
+    color: #333;
 }
 
 header div{
@@ -79,7 +78,7 @@ header div{
     width: 170px;
     height: 30px;
     text-align: center;
-    color: black;
+    color: #333;
 }
 
 ul{
@@ -121,7 +120,7 @@ li {
     width: 100%;
   }
   header a {
-    color: black;
+    color: #333;
     position: relative;
     display: inline-block;
     transition: .3s;
@@ -182,16 +181,11 @@ li {
    
   /*スクロールするコンテンツ*/
   .scrollbox {
-    background-color: #111;
-  }
-
-  .right{
-    background-color: #31aae2;
+    background-color: #333;
   }
 
   .top{
     background-attachment: fixed;
-    background-image: url('/static/images/campus3.png');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -315,7 +309,7 @@ li {
 footer h1{
   margin-right:20%;
   margin-left: 20px;
-  color: black;
+  color: #333;
 }
 
 footer div{
@@ -324,7 +318,7 @@ footer div{
   width: 150px;
   height: 30px;
   text-align: center;
-  color: black;
+  color: #333;
 }
 
 
@@ -344,7 +338,7 @@ footer a:hover::after{
   width: 100%;
 }
 footer a {
-  color: black;
+  color: #333;
   position: relative;
   display: inline-block;
   transition: .3s;
@@ -380,7 +374,9 @@ a > li {
 }
 
 .subtitle{
-  color: cornflowerblue;
+  border-bottom:solid 2px #009877;
+  color: #333;
+  display: inline-block;
 }
 
 .red{
@@ -388,6 +384,11 @@ a > li {
 } 
 
 .block > p{
-  color: #000;
+  color: #333;
 }
 
+#center{
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+}
