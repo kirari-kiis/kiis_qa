@@ -9,21 +9,10 @@
     padding: 0;
     top: 290px;
   }
-
-  footer > h1 {
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: 13px;
-    font-size: 15px;
-    width: 100px
+  footer{
+    display: none !important;
   }
-  .footer > a {
-    font-size: 8px;
-    line-height: 25px;
-  }
-  .footer{
-    display: none;
-  }
+  
 
   .content > h2{
     font-size: 24px;
@@ -121,6 +110,10 @@
 
   footer{
     display:flex;
+  }
+
+  footer > a{
+    display: inline-block;
   }
 
 @media screen and (-webkit-min-device-pixel-ratio:0){

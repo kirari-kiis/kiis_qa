@@ -337,7 +337,6 @@ footer a:hover::after{
 footer a {
   color: #333;
   position: relative;
-  display: inline-block;
   transition: .3s;
   text-decoration: none;
 }
