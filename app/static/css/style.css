@@ -119,6 +119,10 @@
 
 }
 
+  footer{
+    display:flex;
+  }
+
 @media screen and (-webkit-min-device-pixel-ratio:0){
   .main{
     position: absolute;

@@ -298,7 +298,6 @@ li {
   footer{
     width: 100%;
     background-color: whitesmoke;
-    display:flex;
     z-index: 5;
     border-top:solid 2px #009877;
   }
