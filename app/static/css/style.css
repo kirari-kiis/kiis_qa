@@ -22,8 +22,7 @@
     line-height: 25px;
   }
   .footer{
-    width: 80px;
-    margin-top: 10px;
+    display: none;
   }
 
   .content > h2{
@@ -42,8 +41,8 @@
   
   .top{
     background-image: url('/static/images/campus4.png');
-    background-size: auto;
-    background-position: contain;
+    background-size: contain;
+    background-position: top;
     height: 75%;
   }
 
