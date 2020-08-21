@@ -7,7 +7,7 @@
 
   .top > a{
     padding: 0;
-    top: 65%;
+    top: 290px;
   }
 
   footer > h1 {
@@ -28,6 +28,7 @@
 
   .content > h2{
     font-size: 24px;
+    margin-top: 0;
   }
 
   .content > p {
@@ -36,15 +37,14 @@
 
   .content{
     height: 70%;
-    margin-top: 0;
   }
 
   
   .top{
     background-image: url('/static/images/campus4.png');
     background-size: auto;
-    background-position: top;
-    height: 80%;
+    background-position: contain;
+    height: 75%;
   }
 
 
@@ -53,7 +53,7 @@
       display: none;
       position: fixed;
       right: 15px;
-      bottom: 1%;
+      bottom: -10px;
       
   }
   .pagetop a{
