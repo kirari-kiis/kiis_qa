@@ -1,3 +1,19 @@
+@media screen and (max-width:375px){
+  .top > a {
+      top: 280px;
+    }
+
+  .content > h2{
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:414px){
+  .top > a {
+      top: 321px;
+    }
+}
+
 @media screen and (max-width:480px){
   /*画面幅が480pxまでの時*/
 
@@ -7,7 +23,6 @@
 
   .top > a{
     padding: 0;
-    top: 290px;
   }
   footer{
     display: none !important;
@@ -16,7 +31,8 @@
 
   .content > h2{
     font-size: 24px;
-    margin-top: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .content > p {
@@ -27,6 +43,10 @@
     height: 70%;
   }
 
+  .content > h2{
+    position: relative;
+    bottom: 13%;
+  } 
   
   .top{
     background-image: url('/static/images/campus4.png');
@@ -60,7 +80,15 @@
       line-height: 50px;
   }
 
-
+  @media screen and (min-height:812px){
+    /*画面幅が781px以上の時*/
+    .top > a {
+      top: 270px;
+    }
+    .top > h1{
+      position: absolute;
+      top: 200px;
+    }
 }
 @media screen and (min-width:781px){
   /*画面幅が781px以上の時*/
@@ -122,3 +150,4 @@
     top: 200px;
   }
 }
+
