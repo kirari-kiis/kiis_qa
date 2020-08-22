@@ -17,6 +17,10 @@
 @media screen and (max-width:480px){
   /*画面幅が480pxまでの時*/
 
+  .sidebarIconToggle{
+    display: initial !important;
+  }
+
   .top > h1{
     font-size: 40px;
   }
@@ -26,6 +30,10 @@
   }
   footer{
     display: none !important;
+  }
+
+  .top > h1{
+    letter-spacing: 5px;
   }
   
 
@@ -79,6 +87,10 @@
       color:#fff;
       line-height: 50px;
   }
+  .top-header{
+    border-bottom: none;
+    background-color: none;
+  }
 
   @media screen and (min-height:812px){
     /*画面幅が781px以上の時*/
@@ -89,6 +101,7 @@
       position: absolute;
       top: 200px;
     }
+  }
 }
 @media screen and (min-width:781px){
   /*画面幅が781px以上の時*/
@@ -132,10 +145,8 @@
   .top{
     background-image: url('/static/images/campus3.png');
     background-size: cover;
-  }
-
-}
-
+  }  
+  
   footer{
     display:flex;
   }
@@ -144,10 +155,25 @@
     display: inline-block;
   }
 
+  .openSidebarMenu{
+    display: none;
+  }
+
+  .sidebarIconToggle{
+    display: none;
+  }
+
+  .top-header{
+    display: none;
+  }
+
+}
+
+
+
 @media screen and (-webkit-min-device-pixel-ratio:0){
   .main{
     position: absolute;
     top: 200px;
   }
 }
-

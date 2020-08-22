@@ -5,6 +5,7 @@ html{
 
 h1,h2,h3,p,a,li{
   font-family: 'Noto Serif JP', serif;
+
 }
 
 h1{
@@ -125,6 +126,9 @@ li {
     display: inline-block;
     transition: .3s;
     text-decoration: none;
+  }
+  .header{
+    font-size: 20px;
   }
   
   /* ページ遷移時のアニメーション */
@@ -316,6 +320,7 @@ footer div{
   height: 30px;
   text-align: center;
   color: #333;
+  font-size: 18px;
 }
 
 
