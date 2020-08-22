@@ -12,10 +12,18 @@
   .top > a {
       top: 321px;
     }
+
+  #sidebarMenu{
+    height: 555px !important;
+  }
+  
 }
 
 @media screen and (max-width:480px){
   /*画面幅が480pxまでの時*/
+  #sidebarMenu{
+    height: 500px;
+  }
 
   .sidebarIconToggle{
     display: initial !important;
@@ -100,6 +108,10 @@
     .top > h1{
       position: absolute;
       top: 200px;
+    }
+
+    #sidebarMenu{
+      height: 500px !important;
     }
   }
 }
