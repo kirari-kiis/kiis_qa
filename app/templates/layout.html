@@ -9,10 +9,30 @@
         <title>九州情報大学Q&A</title>
         <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/sidebar.css" />
         <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/style2.css" />
+        
     </head>
     <body class="is-slide" id="page-animate">
     <header id='header'>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+      
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li id=title>KIIS FAQ <span>九州情報大学Q＆Aサイト</span></li>
+                <li><a href="/pc_info">PCについて</a></li>
+                <li><a href="/nw_info">NWについて</a></li>
+                <li><a href="/school_info">学校生活について</a></li>
+                <li><a>LINE</a></li>
+            </ul>
+        </div>
+        
         <h1><a href="/index">KIIS FAQ </a></h1>
         
             <div class='header'><a href="/pc_info">PCについて</a></div>

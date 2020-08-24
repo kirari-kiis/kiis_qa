@@ -48,6 +48,7 @@ h1{
     font-size: 30px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 25px;
 }
 
 body {
@@ -82,14 +83,7 @@ header div{
     color: #333;
 }
 
-ul{
-  margin-top: 50px;
-}
 
-li {
-  font-size: 30px;
-  color: #111;
-}
 
 .cp_hr05 {
 	position: relative;
@@ -393,3 +387,65 @@ a > li {
   font-size: 15px;
   color: #333;
 }
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa {
+	overflow-x: hidden;
+	margin: 0 auto;
+  color: whitesmoke;
+  margin-bottom: 25px;
+}
+.cp_qa .cp_actab {
+	padding:  0;
+	border-bottom: 1px dotted whitesmoke;
+}
+.cp_actab{
+  background-color: #009877;
+}
+.cp_qa label {
+	font-size: 1.2em;
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 10px 10px 10px 48px;
+	cursor: pointer;
+}
+.cp_qa .cp_actab-content {
+	font-size: 1em;
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	margin: 0 0px;
+	padding: 0 14px;
+	-webkit-transition: 0.4s ease;
+	        transition: 0.4s ease;
+  opacity: 0;
+  background-color: whitesmoke;
+  color: #333;
+}
+.cp_qa .cp_actab input[type=checkbox]:checked ~ .cp_actab-content {
+	height: auto;
+	padding: 14px;
+	opacity: 1;
+}
+.cp_qa .cp_plus {
+	font-size: 2.4em;
+	line-height: 100%;
+	position: absolute;
+	z-index: 4;
+	margin: 3px 0 0 10px;
+	-webkit-transition: 0.2s ease;
+	        transition: 0.2s ease;
+}
+.cp_qa .cp_actab input[type=checkbox]:checked ~ .cp_plus {
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.cp_qa .cp_actab input[type=checkbox] {
+  display: none;
+}
+

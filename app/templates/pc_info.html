@@ -2,9 +2,9 @@
 {% block content %}
 <div class="left"></div>
 <div class="main">
-    <h2>PCについて</h2>
-    <hr class="cp_hr05" />
-    <ul class="ans">
+    <h2>PCの設定</h2>
+    
+    <!-- <ul class="ans">
         <li><a href="{{url_for('setup')}}">setupアカウントの作成方法</a></li>
         <li><a href="{{url_for('workgroup')}}">ワークグループの参加方法</a></li>
         <li>証明書のインストールについて</li>
@@ -14,7 +14,51 @@
         <li>webメールにアクセスできない場合の対処</li>
         <li>shareフォルダの作成方法</li>
         
-    </ul>
-</div>
+    </ul> -->
+
+            <div class="cp_qa">
+                <div class="cp_actab">
+                    <input id="cp_tabfour021" type="checkbox" name="tabs">
+                    <div class="cp_plus">+</div>
+                    <label for="cp_tabfour021">PCのsetupの方法を教えてください。</label>
+                    <div class="cp_actab-content">こちら　にsetupの方法一覧が記載してあるので参考にしてください。また、初回の情報リテラシーの授業時に
+                        渡されたSurfin'the Internet via Kiis-Net (九州情報大学ネットワーク利用ガイドライン)にも同じ内容
+                    が記載してあります。</div>
+                </div>
+                <div class="cp_actab">
+                    <input id="cp_tabfour022" type="checkbox" name="tabs">
+                    <div class="cp_plus">+</div>
+                    <label for="cp_tabfour022">ウイルス対策ソフト何を使うべきですか？</label>
+                    <div class="cp_actab-content">特に指定はありません。PCCにてインストールできるウイルスバスターのほか、個人で使用しているものでも構いません。
+                        大学で使用するPCには必ずウイルス対策ソフトをインストールしてください。
+                    </div>
+                </div>
+                <div class="cp_actab">
+                    <input id="cp_tabfour023" type="checkbox" name="tabs">
+                    <div class="cp_plus">+</div>
+                    <label for="cp_tabfour023">webメールの使い方を教えてください。</label>
+                    <div class="cp_actab-content">こちらに詳しく記載しています。ブラウザでアクセスがうまくいかない場合はGoogle chromeを使用してください。</div>
+                </div>
+                <div class="cp_actab">
+                    <input id="cp_tabfour024" type="checkbox" name="tabs">
+                    <div class="cp_plus">+</div>
+                    <label for="cp_tabfour024">shareフォルダの作成方法を教えてください</label>
+                    <div class="cp_actab-content">デスクトップで右クリック→新規作成→ショートカット→「¥¥svr260007¥share」を入力→
+                        （ユーザー名:kiisnw¥z学籍番号　パスワード:ネットワークのパスワード）を入力　で作成できます。
+                    </div>
+                </div>
+            </div>
+            <h2>Officeについて</h2>
+            <div class="cp_qa">
+                <div class="cp_actab">
+                    <input id="cp_tabfour025" type="checkbox" name="tabs">
+                    <div class="cp_plus">+</div>
+                    <label for="cp_tabfour025">Officeをインストールしたいです。</label>
+                    <div class="cp_actab-content">Officeのインストールは学生個人ではできません。PCクリニックで対応しているので
+                        PCクリニックでスタッフに相談してください。
+                    </div>
+                </div>
+                
+            </div>
 
 {% endblock %}
