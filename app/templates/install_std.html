@@ -2,16 +2,17 @@
 {% block content %}
 <div class="left"></div>
 <div class="main">
-    <h2>{{content}}のインストールについて</h2>
+    <h2>授業で使用するソフトウェアのインストールについて</h2>
     <hr class="cp_hr05" />
-    <p>{{content}}は学生個人でインストールできません。二階のPCクリニックにて
+    <p>授業で使用するソフトウェア（Office,Visual Studio, ウイルスバスター）は学生個人でインストールできません。二階のPCクリニックにて
         スタッフが対応しております。
     </p>
-{% if office_url %}
-    <a href="{{url_for('office_pcc')}}"><p>{{content}}のインストール手順はこちら（PCCメンバー限定）</p></a>
-{% else %}
-    <a href="{{url_for('virusbuster_pcc')}}"><p>{{content}}のインストール手順はこちら（PCCメンバー限定）</p></a>
-{% endif %}
+
+    <a href="{{url_for('office_pcc')}}"><p>Officeのインストール手順はこちら（PCCメンバー限定）</p></a>
+
+    <a href="{{url_for('virusbuster_pcc')}}"><p>ウイルスバスターのインストール手順はこちら（PCCメンバー限定）</p></a>
+
+    <a href=><p>Visual Studioのインストール手順はこちら（PCCメンバー限定）</p></a>
 </div>
 
 {% endblock %}

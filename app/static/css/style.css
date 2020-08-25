@@ -114,19 +114,28 @@
 
   .main{
     position: absolute;
-    top: 80px !important;
+    top: 60px !important;
     width: 100%;
   }
   .flex{
     width: 100%;
   }
   .main > h2 {
-    color: #333;
-    font-size: 15px;
+    /* color: #333; */
+    font-size: 20px;
     margin: 0 auto;
     text-align: center; 
     width: 100%;
     padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  #faq{
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
   hr{
     display: none;
@@ -137,8 +146,14 @@
     padding: 0;
   }
 
+  .cp_actab{
+    position: relative;
+    bottom: 25px;
+  }
   
-  
+  .description{
+    height: 400px;
+  }
 
 }
 
@@ -159,6 +174,10 @@
 
 @media screen and (min-width:781px){
   /*画面幅が781px以上の時*/
+
+  .main > h2{
+    margin: 0;
+  }
   
 
   .left{
@@ -210,13 +229,27 @@
     display: inline-block;
   }
 
-  .openSidebarMenu{
+  /* .openSidebarMenu{
     display: none;
   }
 
   .sidebarIconToggle{
     display: none;
-  }
+  } */
+
+  #sidebarMenu {
+    position: fixed;
+    right: 0;
+    width: 20% !important;
+    margin-top: 0px;
+    transform: translateX(-100%) ;
+    transition: transform 250ms ease-in-out;
+    margin-left: 0px;
+    /* background-color: gray; */
+    background: linear-gradient(-45deg, #404040, #bfbfbf);
+    z-index: 70;
+    height: 100% !important;
+}
 
   .top-header{
     display: none;
@@ -225,13 +258,13 @@
     height: 100px;
   }
 
-  label > div{
+  /* label > div{
     display: none;
-  } 
+  }  */
 
-  .sidebarIconToggle{
+  /* .sidebarIconToggle{
     display: none;
-  }
+  } */
 
   header > h1{
     margin-top: auto;
@@ -242,13 +275,16 @@
     font-size: 17px;
   }
 
-}
-
-
-
-@media screen and (-webkit-min-device-pixel-ratio:0){
-  .main{
-    position: absolute;
-    top: 200px;
+  .description{
+    height: 500px;
   }
+
+  .cp_actab{
+    position: relative;
+    bottom: 44px;
+  }
+
 }
+
+
+

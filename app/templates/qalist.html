@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="left"></div>
+<div class="main">
+    <h2>PCの設定</h2>
+    
+    <ul class="ans">
+        <li><a href="{{url_for('setup')}}">setupの手順について</a></li>
+        <li><a href="{{url_for('virusbuster_std')}}">授業で使用するソフトウェアのインストール</a></li>
+        <li><a href="{{url_for('office_std')}}"> office（Word,Excel,Power point）について</a></li>
+        <li>ウイルス対策ソフトについて</li>
+        <li><a href="{{url_for('nw_info')}}">Wi-Fiの接続について</a></li>
+        <li>webメールにアクセスできない場合の対処</li>
+        <li>shareフォルダの作成方法</li>
+        
+    </ul>
+
+</div>
+
+{% endblock %}

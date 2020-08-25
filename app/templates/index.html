@@ -23,11 +23,11 @@
       
         <div id="sidebarMenu">
             <ul class="sidebarMenuInner">
-                <li id=title>KIIS FAQ <span>九州情報大学Q＆Aサイト</span></li>
-                <li><a href="/pc_info">PCについて</a></li>
-                <li><a href="/nw_info">NWについて</a></li>
-                <li><a href="/school_info">学校生活について</a></li>
-                <li><a>LINE</a></li>
+                <li id=title><a href="/index">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></a></li>
+                <li><a href="/index#faq">よくある質問</a></li>
+                <li><a href="/qalist">記事一覧</a></li>
+                <li><a href="/school_info">学生生活について</a></li>
+                <li><a>LINE(KIISbot)</a></li>
             </ul>
         </div>
         
@@ -44,6 +44,52 @@
                 </p>
             </div>
         </div>
+        <h2 id=faq>よくある質問</h2>
+        <h2 id="sub">PCの設定</h2>
+        <div class="cp_qa">
+            <div class="cp_actab">
+                <input id="cp_tabfour021" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour021">PCのsetupの方法を教えてください。</label>
+                <div class="cp_actab-content">こちら　にsetupの方法一覧が記載してあるので参考にしてください。また、初回の情報リテラシーの授業時に
+                    渡されたSurfin'the Internet via Kiis-Net (九州情報大学ネットワーク利用ガイドライン)にも同じ内容
+                が記載してあります。</div>
+            </div>
+            <div class="cp_actab">
+                <input id="cp_tabfour022" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour022">ウイルス対策ソフト何を使うべきですか？</label>
+                <div class="cp_actab-content">特に指定はありません。PCCにてインストールできるウイルスバスターのほか、個人で使用しているものでも構いません。
+                    大学で使用するPCには必ずウイルス対策ソフトをインストールしてください。<a href="{{url_for('virusbuster_pcc')}}"><p>ウイルスバスターのインストール手順はこちら（PCCメンバー限定）</p></a>
+                </div>
+            </div>
+            <div class="cp_actab">
+                <input id="cp_tabfour023" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour023">webメールの使い方を教えてください。</label>
+                <div class="cp_actab-content">こちらに詳しく記載しています。ブラウザでアクセスがうまくいかない場合はGoogle chromeを使用してください。</div>
+            </div>
+            <div class="cp_actab">
+                <input id="cp_tabfour024" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour024">shareフォルダの作成方法を教えてください</label>
+                <div class="cp_actab-content">デスクトップで右クリック→新規作成→ショートカット→「¥¥svr260007¥share」を入力→
+                    （ユーザー名:kiisnw¥z学籍番号　パスワード:ネットワークのパスワード）を入力　で作成できます。
+                </div>
+            </div>
+        </div>
+        <h2 id="sub">Officeについて</h2>
+        <div class="cp_qa">
+            <div class="cp_actab">
+                <input id="cp_tabfour025" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour025">Officeをインストールしたいです。</label>
+                <div class="cp_actab-content">Officeのインストールは学生個人ではできません。PCクリニックで対応しているので
+                    PCクリニックでスタッフに相談してください。<a href="{{url_for('office_pcc')}}"><p>Officeのインストール手順はこちら（PCCメンバー限定）</p></a>
+                </div>
+            </div>
+            
+        </div>
     <!-- ページトップへ戻るボタン -->
     <p class="pagetop" style="display: block;">
     <a href="#">
@@ -51,12 +97,11 @@
     </a>
     </p>
     <footer>
-        <h1><a href="/index">KIIS FAQ</a></h1>
-        
-        <div class='footer'><a href="/pc_info">PCについて</a></div>
-        <div class='footer'><a href="/nw_info">NWについて</a></div>
-        <div class='footer'><a href="/school_info">学校生活について</a></div>
-        <div class='footer'><a>LINE</a></div>
+        <h1>KIIS FAQ</h1>
+        <div class='header'><a href="/index#faq">よくある質問</a></div>
+        <div class='header'><a href="/qalist">記事一覧</a></div>
+        <div class='header'><a href="/school_info">学生生活について</a></div>
+        <div class='header'><a>LINE(KIISbot)</a></div>
     </footer>
   
     </body>

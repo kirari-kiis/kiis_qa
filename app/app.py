@@ -29,10 +29,10 @@ def hello():
 def index():
     return render_template("index.html")
 
-#「/pc_info」へアクセスがあった場合に、「pc_info.html」を返す  
-@app.route("/pc_info")
-def pc_info():
-    return render_template("pc_info.html")
+#「/qalist」へアクセスがあった場合に、「qalist.html」を返す  
+@app.route("/qalist")
+def qalist():
+    return render_template("qalist.html")
 
 #「/nw_info」へアクセスがあった場合に、「nw_info.html」を返す  
 @app.route("/nw_info")

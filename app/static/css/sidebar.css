@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     margin-top: 0px;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     transition: transform 250ms ease-in-out;
     margin-left: 0px;
     /* background-color: gray; */
@@ -24,6 +24,7 @@
     text-transform: uppercase;
     font-weight: bold;
     padding: 5px;
+    font-size: 20px;
     cursor: pointer;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.708); */
     text-align: center;
@@ -35,18 +36,24 @@
     font-size: 10px;
     color: rgba(255, 255, 255, 0.824);
     letter-spacing: 5px;
+    text-align: center;
 }
 
 #title{
     letter-spacing: 2px;
 }
+
+#title > a{
+    font-size: 25px;
+}
+
 .sidebarMenuInner li a{
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
@@ -76,7 +83,7 @@ input[type=checkbox] {
     position: fixed;
     height: 3px;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #333;
 }
 .horizontal {
     transition: all 0.3s;

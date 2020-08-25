@@ -44,11 +44,13 @@ h1{
 }
 
 .main > h2{
-    color: #333;
+    color: whitesmoke;
+    background-color: #009877;
     font-size: 30px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 25px;
+
 }
 
 body {
@@ -247,7 +249,7 @@ header div{
 
   .description{
     width: 100%;
-    height: 580px;
+    height: 400px;
     background-color: whitesmoke;
     padding-bottom: 0;
   }
@@ -298,6 +300,7 @@ header div{
     background-color: whitesmoke;
     z-index: 5;
     border-top:solid 2px #009877;
+    height: 100px;
   }
 
 
@@ -305,6 +308,11 @@ footer h1{
   margin-right:20%;
   margin-left: 20px;
   color: #333;
+  font-size: 40px;
+  margin-top: 20px;
+  text-decoration:underline;
+  text-decoration-color:#009877;
+  border-width:1px;
 }
 
 footer div{
@@ -396,14 +404,16 @@ a > li {
 	overflow-x: hidden;
 	margin: 0 auto;
   color: whitesmoke;
-  margin-bottom: 25px;
+  display: initial;
+  /* margin-bottom: 25px; */
 }
 .cp_qa .cp_actab {
 	padding:  0;
 	border-bottom: 1px dotted whitesmoke;
 }
 .cp_actab{
-  background-color: #009877;
+  /* background-color: #009877; */
+  background-color: #989898;
 }
 .cp_qa label {
 	font-size: 1.2em;
@@ -449,3 +459,13 @@ a > li {
   display: none;
 }
 
+#faq{
+  color: whitesmoke;
+  background-color: #009877;
+}
+
+#sub{
+  text-decoration:underline;
+  text-decoration-color:#009877;
+  border-width:1px;
+}
