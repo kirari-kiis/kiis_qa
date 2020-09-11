@@ -1,321 +1,324 @@
-html{
+html {
   scroll-behavior: smooth;
   height: 100vh;
 }
 
-h1,h2,h3,p,a,li{
-  font-family: 'Noto Serif JP', serif;
-
+h1,
+h2,
+h3,
+p,
+a,
+li {
+  font-family: "Noto Serif JP", serif;
 }
 
-h1{
-    color: aqua;
-    font-size: 50px;
+h1 {
+  color: aqua;
+  font-size: 50px;
 }
 
-.top > h1{
+.top > h1 {
   font-size: 150px;
   color: #333;
   margin: 0 auto;
   text-align: center;
   letter-spacing: 10px;
-  text-decoration:underline;
-  text-decoration-color:#009877;
-  border-width:1px;
+  text-decoration: underline;
+  text-decoration-color: #009877;
+  border-width: 1px;
   animation-name: fadeup;
   animation-duration: 2s;
   animation-iteration-count: 1;
-
 }
 
 @keyframes fadeup {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
-  }
+}
 
-.pc h1{
+.pc h1 {
   margin-top: 100px;
 }
 
-.main > h2{
-    color: whitesmoke;
-    background-color: #009877;
-    font-size: 30px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 25px;
-
+.main > h2 {
+  color: whitesmoke;
+  background-color: #009877;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 body {
-    background: whitesmoke;
-    margin: 0em;
-    height: 100vh;
+  background: whitesmoke;
+  margin: 0em;
+  height: 100vh;
 }
 
-header{
-    display:flex;
-    /* background-color: #009877; */
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-    border-bottom:solid 2px #009877;
-    background-color: whitesmoke;
-
+header {
+  display: flex;
+  /* background-color: #009877; */
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  border-bottom: solid 2px #009877;
+  background-color: whitesmoke;
 }
-header h1{
-    margin-right:auto;
-    margin-left: 20px;
-    color: #333;
-}
-
-header div{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 10px;
-    width: 170px;
-    height: 30px;
-    text-align: center;
-    color: #333;
+header h1 {
+  margin-right: auto;
+  margin-left: 20px;
+  color: #333;
 }
 
-
+header div {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  width: 170px;
+  height: 30px;
+  text-align: center;
+  color: #333;
+}
 
 .cp_hr05 {
-	position: relative;
-	height: 1px;
-	border-width: 0;
-	background-color: #00bcd4;
-	background-image: -webkit-linear-gradient(left,
-	#00bcd4 0%,#283593 50%,#00bcd4 100%);
-	background-image:         linear-gradient(90deg,
-  #00bcd4 0%,#283593 50%,#00bcd4 100%);
+  position: relative;
+  height: 1px;
+  border-width: 0;
+  background-color: #00bcd4;
+  background-image: -webkit-linear-gradient(
+    left,
+    #00bcd4 0%,
+    #283593 50%,
+    #00bcd4 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    #00bcd4 0%,
+    #283593 50%,
+    #00bcd4 100%
+  );
   width: 70%;
 }
 
+header a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #009877;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
 
-  
-  header a::after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: #009877;
-    transition: .3s;
-    transform: translateX(-50%);
-  }
-  
-  header a:hover::after{
-    width: 100%;
-  }
-  header a {
-    color: #333;
-    position: relative;
-    display: inline-block;
-    transition: .3s;
-    text-decoration: none;
-  }
-  .header{
-    font-size: 20px;
-  }
-  
-  /* ページ遷移時のアニメーション */
-  #page-animate::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #009877;
-    z-index: 9999;
-    pointer-events: none;
-    right: 100%;
-    -webkit-transition: right 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: right 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-   }
-    #page-animate::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #009877;
-    z-index: 9999;
-    pointer-events: none;
-    left: 100%;
-    -webkit-transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-   }
-    #page-animate.is-slide-in::before {
-    right: 0;
-   }
-    #page-animate.is-slide::after {
-    left: 0;
-   }
+header a:hover::after {
+  width: 100%;
+}
+header a {
+  color: #333;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.header {
+  font-size: 20px;
+}
 
-   body > div {
-    box-sizing: border-box;
-    color: #FFF;
-    /* font-size: 5rem; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 5%;
-  }
-  /* .parallax-bg {
+/* ページ遷移時のアニメーション */
+#page-animate::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #009877;
+  z-index: 9999;
+  pointer-events: none;
+  right: 100%;
+  -webkit-transition: right 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: right 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#page-animate::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #009877;
+  z-index: 9999;
+  pointer-events: none;
+  left: 100%;
+  -webkit-transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#page-animate.is-slide-in::before {
+  right: 0;
+}
+#page-animate.is-slide::after {
+  left: 0;
+}
+
+body > div {
+  box-sizing: border-box;
+  color: #fff;
+  /* font-size: 5rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 5%;
+}
+/* .parallax-bg {
     background-image: url('/static/images/campus.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   } */
-   
-  /*スクロールするコンテンツ*/
-  .scrollbox {
-    background-color: #333;
+
+/*スクロールするコンテンツ*/
+.scrollbox {
+  background-color: #333;
+}
+
+.top {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes img-wrap {
+  0% {
+    clip-path: circle(0 at 50% 50%);
+    -webkit-clip-path: circle(0 at 50% 50%);
   }
 
-  .top{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    animation: img-wrap 2s cubic-bezier(.4, 0, .2, 1);
+  100% {
+    clip-path: circle(100% at 50% 50%);
+    -webkit-clip-path: circle(100% at 50% 50%);
+  }
+}
 
-  }
+.top > a {
+  position: absolute;
+  padding-top: 60px;
+  font-size: 10px;
+  top: 70%;
+  left: 50%;
+}
+.top > a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+.top > a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
 
-  @keyframes img-wrap {
-    0% {
-      clip-path: circle(0 at 50% 50%);
-      -webkit-clip-path: circle(0 at 50% 50%);
-    }
-    
-    100% {
-      clip-path: circle(100% at 50% 50%);
-      -webkit-clip-path: circle(100% at 50% 50%);
-    }
-  }
+.main {
+  width: 75%;
+  margin-right: 0;
+  height: auto;
+  padding-bottom: 100px;
+}
 
-  .top > a {
-    position: absolute;
-    padding-top: 60px;
-    font-size: 10px;
-    top: 70%;
-    left: 50%;
-  }
-  .top > a span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 46px;
-    height: 46px;
-    margin-left: -23px;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    box-sizing: border-box;
-  }
-  .top > a span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: -12px 0 0 -8px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-  }
+.description {
+  width: 100%;
+  height: 400px;
+  background-color: whitesmoke;
+  padding-bottom: 0;
+}
 
-  .main{
-    width: 75%;
-    margin-right: 0;
-    height: auto;
-    padding-bottom: 100px;
-  }
+.content {
+  width: 83%;
+  height: 80%;
+  margin: 0 auto;
+}
 
-  .description{
-    width: 100%;
-    height: 400px;
-    background-color: whitesmoke;
-    padding-bottom: 0;
-  }
+.content > h2 {
+  color: rgb(81, 100, 101);
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-decoration: underline;
+  text-decoration-color: #009877;
+}
+.content > p {
+  color: rgb(81, 100, 101);
+  font-size: 20px;
+  text-align: center;
+}
 
-  .content{
-    width: 83%;
-    height: 80%;
-    margin: 0 auto;
-  }
+.ans > li {
+  font-size: 20px;
+  padding: 10px;
+}
+.main > p {
+  font-size: 20px;
+  color: cornflowerblue;
+  text-align: left;
+}
+.main > a {
+  font-size: 20px;
+  color: darkgoldenrod;
+  text-align: center;
+}
 
-  .content > h2 {
-    color: rgb(81, 100, 101);
-    font-size: 30px;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-decoration:underline;
-    text-decoration-color:#009877;
-  }
-  .content > p{
-      color: rgb(81, 100, 101);
-      font-size: 20px;
-      text-align: center;
-    }
+.head {
+  color: #009877;
+  padding-top: 100px;
+}
 
-  .ans > li{
-    font-size: 20px;
-    padding: 10px;
-  }
-  .main > p{
-    font-size: 20px;
-    color: cornflowerblue;
-    text-align: left;
-  }
-  .main > a{
-    font-size: 20px;
-    color: darkgoldenrod;
-    text-align: center;
-  }
+footer {
+  width: 100%;
+  background-color: whitesmoke;
+  z-index: 5;
+  border-top: solid 2px #009877;
+  height: 100px;
+}
 
-  .head{
-    color: #009877;
-    padding-top: 100px;
-  }
-
-  footer{
-    width: 100%;
-    background-color: whitesmoke;
-    z-index: 5;
-    border-top:solid 2px #009877;
-    height: 100px;
-  }
-
-
-footer h1{
-  margin-right:20%;
+footer h1 {
+  margin-right: 20%;
   margin-left: 20px;
   color: #333;
   font-size: 40px;
   margin-top: 20px;
-  text-decoration:underline;
-  text-decoration-color:#009877;
-  border-width:1px;
+  text-decoration: underline;
+  text-decoration-color: #009877;
+  border-width: 1px;
 }
 
-footer div{
+footer div {
   margin-top: auto;
   margin-bottom: auto;
   width: 150px;
@@ -325,50 +328,48 @@ footer div{
   font-size: 18px;
 }
 
-
 footer a::after {
   position: absolute;
   bottom: 0;
   left: 50%;
-  content: '';
+  content: "";
   width: 0;
   height: 2px;
   background-color: #009877;
-  transition: .3s;
+  transition: 0.3s;
   transform: translateX(-50%);
 }
 
-footer a:hover::after{
+footer a:hover::after {
   width: 100%;
 }
 footer a {
   color: #333;
   position: relative;
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
 }
-
 
 .ans a::after {
   position: absolute;
   bottom: 0;
   left: 50%;
-  content: '';
+  content: "";
   width: 0;
   height: 2px;
   background-color: #009877;
-  transition: .3s;
+  transition: 0.3s;
   transform: translateX(-50%);
 }
 
-.ans a:hover::after{
+.ans a:hover::after {
   width: 100%;
 }
 .ans a {
   color: black;
   position: relative;
   display: inline-block;
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
 }
 
@@ -376,96 +377,98 @@ a > li {
   font-size: 20px;
 }
 
-.subtitle{
-  border-bottom:solid 2px #009877;
+.subtitle {
+  border-bottom: solid 2px #009877;
   color: #333;
   display: inline-block;
 }
 
-.red{
+.red {
   color: red !important;
-} 
+}
 
-.block > p{
+.block > p {
   color: #333;
 }
 
-#center{
+#center {
   text-align: center;
   font-size: 15px;
   color: #333;
 }
 
-.cp_qa *, .cp_qa *:after, .cp_qa *:before {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+.cp_qa *,
+.cp_qa *:after,
+.cp_qa *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .cp_qa {
-	overflow-x: hidden;
-	margin: 0 auto;
+  overflow-x: hidden;
+  margin: 0 auto;
   color: whitesmoke;
   display: initial;
   /* margin-bottom: 25px; */
 }
 .cp_qa .cp_actab {
-	padding:  0;
-	border-bottom: 1px dotted whitesmoke;
+  padding: 0;
+  border-bottom: 1px dotted whitesmoke;
 }
-.cp_actab{
+.cp_actab {
   /* background-color: #009877; */
   background-color: #989898;
 }
 .cp_qa label {
-	font-size: 1.2em;
-	position: relative;
-	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 10px 10px 10px 48px;
-	cursor: pointer;
+  font-size: 1.2em;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 10px 10px 48px;
+  cursor: pointer;
 }
 .cp_qa .cp_actab-content {
-	font-size: 1em;
-	position: relative;
-	overflow: hidden;
-	height: 0;
-	margin: 0 0px;
-	padding: 0 14px;
-	-webkit-transition: 0.4s ease;
-	        transition: 0.4s ease;
+  font-size: 1em;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  margin: 0 0px;
+  padding: 0 14px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
   opacity: 0;
   background-color: whitesmoke;
   color: #333;
 }
-.cp_qa .cp_actab input[type=checkbox]:checked ~ .cp_actab-content {
-	height: auto;
-	padding: 14px;
-	opacity: 1;
+.cp_qa .cp_actab input[type="checkbox"]:checked ~ .cp_actab-content {
+  height: auto;
+  padding: 14px;
+  opacity: 1;
 }
 .cp_qa .cp_plus {
-	font-size: 2.4em;
-	line-height: 100%;
-	position: absolute;
-	z-index: 4;
-	margin: 3px 0 0 10px;
-	-webkit-transition: 0.2s ease;
-	        transition: 0.2s ease;
+  font-size: 2.4em;
+  line-height: 100%;
+  position: absolute;
+  z-index: 4;
+  margin: 3px 0 0 10px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
-.cp_qa .cp_actab input[type=checkbox]:checked ~ .cp_plus {
-	-webkit-transform: rotate(45deg);
-	        transform: rotate(45deg);
+.cp_qa .cp_actab input[type="checkbox"]:checked ~ .cp_plus {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-.cp_qa .cp_actab input[type=checkbox] {
+.cp_qa .cp_actab input[type="checkbox"] {
   display: none;
 }
 
-#faq{
+#faq {
   color: whitesmoke;
   background-color: #009877;
 }
 
-#sub{
-  text-decoration:underline;
-  text-decoration-color:#009877;
-  border-width:1px;
+#sub {
+  text-decoration: underline;
+  text-decoration-color: #009877;
+  border-width: 1px;
 }
