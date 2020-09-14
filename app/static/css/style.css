@@ -168,6 +168,14 @@
 
 @media screen and (min-width: 781px) {
   /*画面幅が781px以上の時*/
+  .imgbox{
+    height: 500px;
+    width: 700px;
+  }
+  .imgbox2{
+    height: 400px;
+    width: 700px;
+  }
 
   .main > h2 {
     margin: 0;

@@ -6,6 +6,7 @@ html {
 h1,
 h2,
 h3,
+h4,
 p,
 a,
 li {
@@ -15,6 +16,10 @@ li {
 h1 {
   color: aqua;
   font-size: 50px;
+}
+
+h4{
+  color: #333;
 }
 
 .top > h1 {
@@ -471,4 +476,19 @@ a > li {
   text-decoration: underline;
   text-decoration-color: #009877;
   border-width: 1px;
+}
+
+
+.imgbox > img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+
+.imgbox2 > img{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
 }
