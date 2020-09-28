@@ -39,6 +39,11 @@ def qalist():
 def nw_info():
     return render_template("nw_info.html")
 
+# 「/kiisnw」へアクセスがあった場合に、「kiisnw.html」を返す
+@app.route("/kiisnw")
+def kiisnw():
+    return render_template("kiisnw.html")
+
 #「/school_info」へアクセスがあった場合に、「school_info.html」を返す  
 @app.route("/school_info")
 def school_info():
@@ -84,6 +89,8 @@ def workgroup():
 @app.route("/wifi_win")
 def wifi_win():
     return render_template("wifi_win.html")
+
+
 
 
 if __name__ == '__main__':

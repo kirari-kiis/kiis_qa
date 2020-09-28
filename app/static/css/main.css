@@ -442,7 +442,7 @@ a > li {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   opacity: 0;
-  background-color: whitesmoke;
+  background-color: #DAF0EB;
   color: #333;
 }
 .cp_qa .cp_actab input[type="checkbox"]:checked ~ .cp_actab-content {
@@ -491,4 +491,18 @@ a > li {
   height:auto;
   max-width:100%;
   max-height:100%;
+}
+
+ol > li{
+  color: #333;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+ol > p{
+  color: #333;
+}
+
+#li_top{
+  padding-top: 20px;
 }

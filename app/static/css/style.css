@@ -19,6 +19,16 @@
 }
 
 @media screen and (max-width: 480px) {
+  .imgbox{
+    height: 200px;
+    width: 280px;
+    margin: 0 auto;
+  }
+  .imgbox2{
+    height: 180px;
+    width: 280px;
+    margin: 0 auto;
+  }
   .header {
     display: none;
   }

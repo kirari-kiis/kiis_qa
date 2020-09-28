@@ -51,9 +51,9 @@
                 <input id="cp_tabfour021" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
                 <label for="cp_tabfour021">PCのsetupの方法を教えてください。</label>
-                <div class="cp_actab-content">こちら　にsetupの方法一覧が記載してあるので参考にしてください。また、初回の情報リテラシーの授業時に
+                <div class="cp_actab-content"><p><a href="{{url_for('setup')}}">こちら</a>にsetupの方法一覧が記載してあるので参考にしてください。また、初回の情報リテラシーの授業時に
                     渡されたSurfin'the Internet via Kiis-Net (九州情報大学ネットワーク利用ガイドライン)にも同じ内容
-                が記載してあります。</div>
+                が記載してあります。</p></div>
             </div>
             <div class="cp_actab">
                 <input id="cp_tabfour022" type="checkbox" name="tabs">
@@ -87,8 +87,16 @@
                 <div class="cp_actab-content">Officeのインストールは学生個人ではできません。PCクリニックで対応しているので
                     PCクリニックでスタッフに相談してください。<a href="{{url_for('office_pcc')}}"><p>Officeのインストール手順はこちら（PCCメンバー限定）</p></a>
                 </div>
+
             </div>
-            
+            <div class="cp_actab">
+                <input id="cp_tabfour026" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour026">Officeの画面で資格情報の入力を求める画面が消えません。</label>
+                <div class="cp_actab-content">Officeのインストールは学生個人ではできません。PCクリニックで対応しているので
+                    PCクリニックでスタッフに相談してください。<a href="{{url_for('office_pcc')}}"><p>Officeのインストール手順はこちら（PCCメンバー限定）</p></a>
+                </div>
+            </div>
         </div>
     <!-- ページトップへ戻るボタン -->
     <p class="pagetop" style="display: block;">

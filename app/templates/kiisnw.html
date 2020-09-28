@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="left"></div>
+<div class="main">
+    <h2>KIISNWネットワークの設定</h2>
+    <div class="block">
+        <h4>①.ワークグループ参加の設定</h4>
+        <p class="red">setupアカウントは使用しないでください。</p>
+        <hr class="cp_hr05" />
+        <ol>
+            <li id="li_top">デスクトップ画面のスタートボタンを右クリックしエクスプローラーをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/kiisnw/kiisnw1.png" alt="kiisnw1">
+            </div>
+            <li>PCを右クリックしてプロパティをクリックします。</li>
+            <div class="imgbox2">
+                <img src="/static/images/kiisnw/kiisnw2.png" alt="kiisnw2">
+            </div>
+            <li>「システム」画面が表示されたら、設定の変更をクリックします。</li>
+            <div class="imgbox2">
+                <img src="/static/images/kiisnw/kiisnw3.png" alt="kiisnw3">
+            </div>
+            <li>システムのプロパティ画面がされたら、コンピューターの説明の欄に「自分の名前」を入力し、変更ボタンをクリックします</li>
+            <div class="imgbox">
+                <img src="/static/images/kiisnw/kiisnw4.png" alt="kiisnw4">
+            </div>
+            <li>その下の入力欄に「KIISNW」と入力して、OKボタンをクリックします。コンピューター名/ドメイン名の変更画面 が表示されたら、コンピューター名に「CMBLz学籍番号」、
+                ワークグループを選択し、その下の入力欄に「KIISNW」と入力して、OKボタンをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/kiisnw/kiisnw5.png" alt="kiisnw5">
+            </div>
+            <li>「KIISNWワークグループへようこそ。」と表示されたらOKボタンをクリックします。</li>
+            <div class="imgbox2">
+                <img src="/static/images/kiisnw/kiisnw6.png" alt="kiisnw6">
+            </div>
+            <li>OKボタンをクリックします。</li>
+            <div class="imgbox2">
+                <img src="/static/images/kiisnw/kiisnw7.png" alt="kiisnw7">
+            </div>
+            <li>「システムのプロパティ」画面に戻ったら、閉じるボタンをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/kiisnw/kiisnw8.png" alt="kiisnw8">
+            </div>
+            <li>パソコンの再起動を求められるので、今すぐ再起動するボタンをクリックし、再起動します。</li>
+            <div class="imgbox2">
+                <img src="/static/images/kiisnw/kiisnw9.png" alt="kiisnw9">
+            </div>
+            <p>※ 以上でパソコンのワークグループ参加設定は終了です。</p>
+            
+        </ol>
+    </div>
+    <br><br>
+    <div class="block">
+        <h4>②.KIIS認証局の信頼設定</h4>
+        <p>KIIS認証局とは、学内のサーバーと暗号化通信をする際に必要となる「サーバー証明書」を発行する認証機関です。</p>
+        <p>情報処理室で提供しているメールサービスは利用する端末すべてにKIIS認証局を信頼する設定が必要です。</p> 
+        <p class="red">有線LANに接続して作業してください。また、ネットワーク用のパスワードが必要となります。</p>
+        <p>ネットワーク用のパスワードについては　こちら　をクリック</p>
+        <hr class="cp_hr05" /> 
+        <ol>
+            <li>パソコンに自分の名前のアカウントでログインして「デスクトップ」画面を表示したら、
+            スタートボタンをクリックし、Microsoft Edgeをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate1.png" alt="Certificate1">
+            </div>
+            <li>ユーザー認証画面が表示されるので、</li>
+            <p class="red">kiisnw\z学籍番号・ネットワーク用のパスワード</p>
+            <p>をそれぞれ入力し、OKボタンをクリックします。（表示されない場合はそのまま作業を進めてください）</p>
+            <p class="red">（正しく入力した場合でも複数回ユーザー認証画面が表示される時があります。その時は何も入力せずキャンセルをクリックして認証画面を閉じてください）</p>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate2.png" alt="Certificate2">
+            </div>
+            <p class="red">（注意）ネットワークを利用する際のユーザー名について</p>
+            <p>ネットワーク（インターネット、メール、共有サーバーなど）を利用するときの
+                ユーザー名は「z学籍番号」ですが、ユーザー名の前にドメインを明示するために文字列「kiisnw\」を入力することが必要な場合があります。
+                ここでも「kiisnw\z学籍番号」と入力してください(全て半角文字で入力してください)。</p>
+            <br>
+            <li>アドレスバーに「http://service.kiis.ac.jp」と入力し、本学のサービス提供サイトへアクセスします。</li>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate3.png" alt="Certificate3">
+            </div>
+            <li>サービスメニューにあるKIIS認証局から証明書のダウンロードのリンクをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate4.png" alt="Certificate4">
+            </div>
+            <li>保存ボタンをクリックします。</li>
+            <div class="imgbox2">
+                <img src="/static/images/Certificate/Certificate5.png" alt="Certificate5">
+            </div>
+            <li>証明書 画面が表示されたら、証明書のインストールボタンをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate6.png" alt="Certificate6">
+            </div>
+            <li>「証明書のインポートウィザード」が表示されたら、保存場所にローカルコンピューターを選択し、次へボタンをクリックします。</li>
+            <div class="imgbox2">
+                <img src="/static/images/Certificate/Certificate7.png" alt="Certificate7">
+            </div>
+            <li>ユーザーアカウント制御」画面が表示されたら、はいボタンをクリックします。</li>
+            <div class="imgbox2">
+                <img src="/static/images/Certificate/Certificate8.png" alt="Certificate8">
+            </div>
+            <li>証明書をすべて次のストアに配置するにチェックを入れて、参照ボタンをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate9.png" alt="Certificate9">
+            </div>
+            <li>「証明書ストアの選択」画面が表示されたら、信頼されたルート証明機関を選択し、OKボタンをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate10.png" alt="Certificate10">
+            </div>
+            <li>証明書ストアの欄が「信頼されたルート証明機関」になっている事を確認して、次へボタンをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate11.png" alt="Certificate11">
+            </div>
+            <li>「証明書のインポートウィザードの完了」画面が表示されたら、完了ボタンをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate12.png" alt="Certificate12">
+            </div>
+            <li>「正しくインポートされました。」と表示されたら、ＯＫボタンをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/Certificate/Certificate13.png" alt="Certificate13">
+            </div>
+            <li>ＯＫボタンをクリックし、「証明書」画面を閉じます。</li>
+        </ol>
+        <p>※ 以上でKIIS認証局の信頼設定は終了です。</p>
+    </div>
+</div>
+
+{% endblock %}
