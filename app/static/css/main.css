@@ -506,3 +506,7 @@ ol > p{
 #li_top{
   padding-top: 20px;
 }
+
+li{
+  color: #333;
+}

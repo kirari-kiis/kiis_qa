@@ -80,10 +80,10 @@ def virusbuster_pcc():
 def setup():
     return render_template("setup.html")
 
-#「/workgroup」へアクセスがあった場合に、「workgroup.html」の文字列を返す
-@app.route("/workgroup")
-def workgroup():
-    return render_template("workgroup.html")
+#「/share」へアクセスがあった場合に、「share.html」の文字列を返す
+@app.route("/share")
+def share():
+    return render_template("share.html")
 
 #「/wifi_win」へアクセスがあった場合に、「wifi_win.html」の文字列を返す
 @app.route("/wifi_win")
