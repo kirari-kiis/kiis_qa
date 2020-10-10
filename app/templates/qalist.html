@@ -3,17 +3,25 @@
 <div class="left"></div>
 <div class="main">
     <h2>PCの設定</h2>
-    
+    <p id="center">PCクリニックでよく受ける質問をまとめたので参考にしてください。</p>
+    <p id="center">もちろんPCクリニックに来ていただけたらこちらの内容も対応します！</p>
     <ul class="ans">
+        <h4 class="anstitle">PCの設定について</h4>
         <li><a href="{{url_for('setup')}}">setupの手順について</a></li>
         <li><a href="{{url_for('kiisnw')}}">KIISNWネットワークの設定について</a></li>
-        <li><a href="{{url_for('nw_info')}}">無線LANの接続について</a></li>
-        <li><a href="{{url_for('virusbuster_std')}}">授業で使用するソフトウェアのインストール</a></li>
-        <li><a href="{{url_for('office_std')}}"> office（Word,Excel,Power point）について</a></li>
-        <li>ウイルス対策ソフトについて</li>
-        <li>webメールにアクセスできない場合の対処</li>
+        <li><a href="{{url_for('nw_info')}}">無線LAN(Wi-fi)の接続について</a></li>
         <li><a href="{{url_for('share')}}"> shareフォルダの作成方法</a></li>
-        
+
+        <h4 class="anstitle">授業で使用するソフトウェアについて</h4>
+        <li><a href="{{url_for('install_std')}}">授業で使用するソフトウェアのインストール</a></li>
+        <li><a href="{{url_for('office_id')}}"> Officeを開くたびにIDとパスワードを聞かれる状態について</a></li>
+        <li>ウイルス対策ソフトについて</li>
+
+        <h4 class="anstitle">その他（メール等）について</h4>
+        <li>webメールにアクセスできない場合の対処</li>
+        <li>「¥」がうまく入力できない場合</li>
+        <li>G suiteの初期設定</li>
+        <li></li>
     </ul>
 
 </div>

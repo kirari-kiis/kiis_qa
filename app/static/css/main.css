@@ -9,7 +9,8 @@ h3,
 h4,
 p,
 a,
-li {
+li, 
+div{
   font-family: "Noto Serif JP", serif;
 }
 
@@ -442,7 +443,7 @@ a > li {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   opacity: 0;
-  background-color: #DAF0EB;
+  background-color: whitesmoke;
   color: #333;
 }
 .cp_qa .cp_actab input[type="checkbox"]:checked ~ .cp_actab-content {
@@ -509,4 +510,10 @@ ol > p{
 
 li{
   color: #333;
+}
+
+.anstitle{
+  font-size: 20px;
+  background: linear-gradient(transparent 90%, #009877 70%);
+  display: inline-block;
 }
