@@ -44,6 +44,9 @@
     display: flex;
   }
 
+  .header_index > h1{
+    display: none;
+  }
   /*画面幅が480pxまでの時*/
   /* #sidebarMenu{
     height: 500px;
@@ -191,6 +194,10 @@
     margin: 0;
   }
 
+  .top > h1{
+    display: none;
+  }
+
   .left {
     height: 100%;
     width: 0;
@@ -239,15 +246,15 @@
     display: inline-block;
   }
 
-  /* .openSidebarMenu{
+  .openSidebarMenu{
     display: none;
   }
 
   .sidebarIconToggle{
     display: none;
-  } */
+  }
 
-  #sidebarMenu {
+  /* #sidebarMenu {
     position: fixed;
     right: 0;
     width: 20% !important;
@@ -256,10 +263,10 @@
     transition: transform 250ms ease-in-out;
     margin-left: 0px;
     /* background-color: gray; */
-    background: linear-gradient(-45deg, #404040, #bfbfbf);
+    /* background: linear-gradient(-45deg, #404040, #bfbfbf);
     z-index: 70;
-    height: 100% !important;
-  }
+    height: 100% !important; */
+  } */
 
   .top-header {
     display: none;
@@ -293,4 +300,8 @@
     position: relative;
     bottom: 44px;
   }
-}
+
+  .photo1 {
+    background-image: url("/static/images/campus3.png");
+    background-size: cover;
+  }

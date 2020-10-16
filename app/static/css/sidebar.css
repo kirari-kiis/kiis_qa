@@ -4,7 +4,7 @@
   width: 100%;
   margin-top: 0px;
   transform: translateX(-100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 100ms ease-in-out;
   margin-left: 0px;
   /* background-color: gray; */
   background: linear-gradient(-45deg, #404040, #bfbfbf);
