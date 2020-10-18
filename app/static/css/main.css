@@ -205,15 +205,6 @@ body > div {
   animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.middle {
-  /* background-attachment: fixed; */
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-}
-
 @keyframes img-wrap {
   0% {
     clip-path: circle(0 at 50% 50%);
@@ -283,7 +274,7 @@ body > div {
   color: rgb(81, 100, 101);
   font-size: 30px;
   text-align: center;
-  /* margin-top: 100px; */
+  margin-top: 100px;
   margin-bottom: 100px;
   text-decoration: underline;
   text-decoration-color: #009877;
@@ -295,8 +286,8 @@ body > div {
 }
 
 .ans > li {
-  font-size: 18px;
-  padding: 5px;
+  font-size: 20px;
+  padding: 10px;
 }
 .main > p {
   font-size: 20px;
@@ -480,7 +471,6 @@ a > li {
 #faq {
   color: whitesmoke;
   background-color: #009877;
-  margin: 0;
 }
 
 #sub {
@@ -527,12 +517,3 @@ li{
   background: linear-gradient(transparent 90%, #009877 70%);
   display: inline-block;
 }
-
-
-/* .list{
-  display: flex;
-} */
-
-/* .list_block{
-  float: left;
-} */
