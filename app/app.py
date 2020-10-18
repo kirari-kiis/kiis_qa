@@ -96,6 +96,31 @@ def share():
 def wifi_win():
     return render_template("wifi_win.html")
 
+#「/wifi_mac」へアクセスがあった場合に、「wifi_mac.html」の文字列を返す
+@app.route("/wifi_mac")
+def wifi_mac():
+    return render_template("wifi_mac.html")
+
+#「/wifi_ios」へアクセスがあった場合に、「wifi_ios.html」の文字列を返す
+@app.route("/wifi_ios")
+def wifi_ios():
+    return render_template("wifi_ios.html")
+
+#「/wifi_android」へアクセスがあった場合に、「wifi_android.html」の文字列を返す
+@app.route("/wifi_android")
+def wifi_android():
+    return render_template("wifi_android.html")
+
+#「/outlook」へアクセスがあった場合に、「outlook.html」の文字列を返す
+@app.route("/outlook")
+def outlook():
+    return render_template("outlook.html")
+
+#「/gsuite」へアクセスがあった場合に、「gsuite.html」の文字列を返す
+@app.route("/gsuite")
+def gsuite():
+    return render_template("gsuite.html")
+
 
 
 

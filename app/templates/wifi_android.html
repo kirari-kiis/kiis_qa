@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="left"></div>
+<div class="main">
+    <h2>Wi-fiの接続方法（Android）</h2>
+    <p class="red">AndroidOSの画面はバージョンや機種によって異なる場合があります。<br>
+        適宜読み替えて作業を行うようにしてください。
+        </p>
+    <div class="block">
+        <ol type="1">
+            <li>メニューを表示させ、設定ボタンをタップします。</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android1.png" alt="android1">
+            </div>
+            <li>ネットワークとインターネットをタップし、近くにある小文字のアルファベット「ｋ」から始まるアクセスポイント(例:kroom263、kHall等)へ接続します。</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android2.png" alt="android2">
+            </div>
+            <li>パスワードを求められた場合は下記のパスワードを入力し、接続をタップします</li>
+            <div class="imgbox2">
+                <img src="/static/images/android/android3.png" alt="android3">
+            </div>
+            <li>アクセスポイントへ接続したらブラウザを開きアドレスバーに下記アドレスを入力します</li>
+            <div class="imgbox2">
+                <img src="/static/images/android/android4.png" alt="android4">
+            </div>
+            <li>無線LANをタップします</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android5.png" alt="android5">
+            </div>
+            <li>Windows・Androidボタンをタップします。</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android6.png" alt="android6">
+            </div>
+            <li>ダウンロードした証明書に名前を付けます。名前を付けたら、認証情報の使用という項目を確認して<br>
+                「VPNとアプリ」になっていたら「Wi-Fi」に変更し、OKをタップします。<br>
+                (Androidのバージョンによっては認証情報の使用がない場合もあります。)</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android7.png" alt="android7">
+            </div>
+            <li>証明書を保管する認証情報ストレージへのパスワード設定画面が表示された場合は、画面の指示に従い、パスワードを設定し、OKをタップします。<br>
+                注意：ここでのパスワードは各自でパスワードを考え、設定してください。
+                </li>
+            <div class="imgbox">
+                <img src="/static/images/android/android8.png" alt="android8">
+            </div>
+            <p class="red">(備考) KIISWLANに接続できない場合</p>
+            <ol type="i">
+                <li>「設定」メニューにあるロック画面とセキュリティをタップします。</li>
+                <div class="imgbox2">
+                    <img src="/static/images/android/android9.png" alt="android9">
+                </div>
+                <li>信頼できる認証情報をタップします。</li>
+                <div class="imgbox">
+                    <img src="/static/images/android/android10.png" alt="android10">
+                </div>
+                <li>上のメニューをユーザーに切り替えて「kiisCA.kiis.ac.jp」が入っているかを確認します。</li>
+                <div class="imgbox2">
+                    <img src="/static/images/android/android11.png" alt="android11">
+                </div>
+                <p>※もし、「kiisCA.kiis.ac.jp」がない場合は手順④からやり直してください。</p>
+
+            </ol>
+            <li>確認したら、再度、メニューを表示させ設定をタップします。</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android12.png" alt="android12">
+            </div>
+            <li>ネットワークとインターネットをタップします。</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android13.png" alt="android13">
+            </div>
+            <li>「ネットワークを追加」をタップします。</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android14.png" alt="android14">
+            </div>
+            <li>次のような画面が表示されたら、下記の通り設定していきます。</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android15.png" alt="android15">
+            </div>
+            <li>画面を下にスクロールすると表示される詳細オプションをタップし、非公開ネットワークを「はい」に変更します。</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android16.png" alt="android16">
+            </div>
+            <li>KIISWLAN 接続済みという表示がされれば設定完了です。</li>
+            <div class="imgbox">
+                <img src="/static/images/android/android17.png" alt="android17">
+            </div>
+            <p>※以上でAndroid OSでのKIISWLANの設定は終了です。</p>
+        </ol>
+    </div>
+</div>
+
+{% endblock %}

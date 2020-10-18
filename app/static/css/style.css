@@ -44,6 +44,9 @@
     display: flex;
   }
 
+  .menu{
+    display: none;
+  }
   /*画面幅が480pxまでの時*/
   /* #sidebarMenu{
     height: 500px;
@@ -141,6 +144,7 @@
     width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
+
   }
   hr {
     display: none;
@@ -196,7 +200,6 @@
     width: 0;
     background-color: #009877;
   }
-
   .flex {
     display: flex;
     padding: 0em;
@@ -229,6 +232,7 @@
   .top {
     background-image: url("/static/images/campus3.png");
     background-size: cover;
+
   }
 
   footer {
@@ -256,7 +260,7 @@
     transition: transform 250ms ease-in-out;
     margin-left: 0px;
     /* background-color: gray; */
-    background: linear-gradient(-45deg, #404040, #bfbfbf);
+    /* background: linear-gradient(-45deg, #404040, #bfbfbf); */
     z-index: 70;
     height: 100% !important;
   }
@@ -266,6 +270,14 @@
   }
   header {
     height: 100px;
+  }
+
+  .menu{
+    font-size: 20px;
+    margin-top: 20px;
+    color: lightgray;
+    position: fixed;
+    left: 50px;
   }
 
   /* label > div{
@@ -292,5 +304,13 @@
   .cp_actab {
     position: relative;
     bottom: 44px;
+  }
+
+  .middle{
+    /* background-image: url("/static/images/campus3.png");
+    background-size: cover; */
+    background-color: lightgreen;
+    height: 250px;
+    padding: 0em;
   }
 }

@@ -7,10 +7,12 @@
   transition: transform 250ms ease-in-out;
   margin-left: 0px;
   /* background-color: gray; */
-  background: linear-gradient(-45deg, #404040, #bfbfbf);
+  /* background: linear-gradient(-45deg, #404040, #bfbfbf); */
+  background-color: #a4ae9c;
   z-index: 70;
   height: 100% !important;
   padding: 10px;
+
 }
 
 .sidebarMenuInner {
@@ -75,6 +77,7 @@ input[type="checkbox"] {
   left: 15px;
   height: 22px;
   width: 22px;
+  margin-top: 6px;
 }
 .spinner {
   transition: all 0.3s;
@@ -82,7 +85,7 @@ input[type="checkbox"] {
   position: fixed;
   height: 3px;
   width: 100%;
-  background-color: #333;
+  background-color: lightgray;
 }
 .horizontal {
   transition: all 0.3s;
