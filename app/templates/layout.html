@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500&amp;family=Noto+Sans+JP:wght@100;200;300;400;500&amp;display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
         <title>九州情報大学Q&A</title>
         <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
@@ -15,32 +17,41 @@
         
     </head>
     <body class="is-slide" id="page-animate">
-    <header id='header'>
+        <div class="cursor"></div>
+        <div class="follower"><p class="view">View</p></div>
+        <p class="menu">MENU</p>
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-        <label for="openSidebarMenu" class="sidebarIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
+        <label for="openSidebarMenu" class="sidebarIconToggle" id="hover">
+            <div class="spinner diagonal part-1" id="common_menu"></div>
+            <div class="spinner horizontal" id="common_menu"></div>
+            <div class="spinner diagonal part-2" id="common_menu"></div>
         </label>
-
+        
         <div id="sidebarMenu">
-            <ul class="sidebarMenuInner">
-                <li id=title><a href="/index">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></a></li>
-                <li><a href="/index#faq">よくある質問</a></li>
-                <li><a href="/qalist">記事一覧</a></li>
-                <li><a href="/school_info">学生生活について</a></li>
-                <li><a>LINE(KIISbot)</a></li>
-            </ul>
+            <div class="sidebarbrock">
+                <ul class="sidebarMenuInner">
+                    <li id=title><a href="/index">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></a></li>
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/index#faq">FAQ</a></li>
+                    <li><a href="/qalist">All articles</a></li>
+                    <!-- <li><a href="/school_info"></a></li> -->
+                    <li><a>LINE(KIIS BOT)</a></li>
+                </ul>
+            </div>
+            <div class="sidebarbrock">
+                <h2>KIIS BOT</h2>
+            </div>
         </div>
-        
-        <h1><a href="/index">KIIS FAQ </a></h1>
-        
-            <div class='header'><a href="/index#faq">よくある質問</a></div>
-            <div class='header'><a href="/qalist">記事一覧</a></div>
-            <div class='header'><a href="/school_info">学生生活について</a></div>
-            <div class='header'><a>LINE(KIISbot)</a></div>
-
-    </header>
+        <header class="common_header">
+            <ul class="header_menu">
+                <li><a href="/index">Home</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/qalist">All articles</a></li>
+                <!-- <li><a href="/school_info"></a></li> -->
+                <li><a>LINE(KIIS BOT)</a></li>
+            </ul>
+                
+        </header>
 
     <div class="flex">
         

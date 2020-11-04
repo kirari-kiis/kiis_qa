@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="left"></div>
+<div class="main">
+    <h1 >FAQ</h1>
+    <h2>よくある質問</h2>
+    <div class="block">
+        <h2 id="sub">PCの設定</h2>
+        <div class="cp_qa">
+            <div class="cp_actab">
+                <input id="cp_tabfour021" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour021" id="hover">PCのsetupの方法を教えてください。</label>
+                <div class="cp_actab-content"><p><a href="{{url_for('setup')}}">こちら</a>にsetupの方法一覧が記載してあるので参考にしてください。また、初回の情報リテラシーの授業時に
+                    渡されたSurfin'the Internet via Kiis-Net (九州情報大学ネットワーク利用ガイドライン)にも同じ内容
+                が記載してあります。</p></div>
+            </div>
+            <div class="cp_actab">
+                <input id="cp_tabfour022" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour022" id="hover">ウイルス対策ソフト何を使うべきですか？</label>
+                <div class="cp_actab-content">特に指定はありません。PCCにてインストールできるウイルスバスターのほか、個人で使用しているものでも構いません。
+                    大学で使用するPCには必ずウイルス対策ソフトをインストールしてください。<a href="{{url_for('virusbuster_pcc')}}"><p>ウイルスバスターのインストール手順はこちら（PCCメンバー限定）</p></a>
+                </div>
+            </div>
+            <div class="cp_actab">
+                <input id="cp_tabfour023" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour023" id="hover">webメールの使い方を教えてください。</label>
+                <div class="cp_actab-content">こちらに詳しく記載しています。ブラウザでアクセスがうまくいかない場合はGoogle chromeを使用してください。</div>
+            </div>
+            <div class="cp_actab">
+                <input id="cp_tabfour024" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour024" id="hover">shareフォルダの作成方法を教えてください</label>
+                <div class="cp_actab-content">デスクトップで右クリック→新規作成→ショートカット→「¥¥svr260007¥share」を入力→
+                    （ユーザー名:kiisnw¥z学籍番号　パスワード:ネットワークのパスワード）を入力　で作成できます。
+                </div>
+            </div>
+        </div>
+        <h2 id="sub">Officeについて</h2>
+        <div class="cp_qa">
+            <div class="cp_actab">
+                <input id="cp_tabfour025" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour025" id="hover">Officeをインストールしたいです。</label>
+                <div class="cp_actab-content">Officeのインストールは学生個人ではできません。PCクリニックで対応しているので
+                    PCクリニックでスタッフに相談してください。<a href="{{url_for('office_pcc')}}"><p>Officeのインストール手順はこちら（PCCメンバー限定）</p></a>
+                </div>
+
+            </div>
+            <div class="cp_actab">
+                <input id="cp_tabfour026" type="checkbox" name="tabs">
+                <div class="cp_plus">+</div>
+                <label for="cp_tabfour026" id="hover">Officeの画面でIDとパスワードの入力を求める画面が消えません。</label>
+                <div class="cp_actab-content">Officeのインストールは学生個人ではできません。PCクリニックで対応しているので
+                    PCクリニックでスタッフに相談してください。<a href="{{url_for('office_pcc')}}"><p>Officeのインストール手順はこちら（PCCメンバー限定）</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

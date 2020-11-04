@@ -29,20 +29,17 @@
     width: 280px;
     margin: 0 auto;
   }
-  .header {
+
+  .header_menu{
     display: none;
   }
 
-  header > h1 {
-    font-size: 30px;
-    margin: 10px auto;
+  .sidebarIconToggle{
+    position: fixed;
+    top: 20px;
+    right:20px;
   }
 
-  header > div {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
 
   .menu{
     display: none;
@@ -87,11 +84,13 @@
   }
 
   .top {
-    background-image: url("/static/images/campus4.png");
+    background-image: url("/static/images/campus6.png");
     background-size: contain;
     background-position: top;
     height: 75%;
   }
+
+  
 
   /* ページTOPに戻る */
   .pagetop {
@@ -115,10 +114,10 @@
     color: #fff;
     line-height: 50px;
   }
-  .top-header {
+  /* .top-header {
     border-bottom: none;
     background-color: none;
-  }
+  } */
 
   .main {
     position: absolute;
@@ -160,8 +159,17 @@
     bottom: 25px;
   }
 
-  .description {
-    height: 400px;
+  .sidebarbrock{
+    width: 100%;
+  }
+  .sidebarMenuInner li a {
+    font-size: 40px;
+  }
+  .follower{
+    display: none;
+  }
+  .cursol{
+    display: none;
   }
 }
 
@@ -205,6 +213,11 @@
     padding: 0em;
     flex-wrap: wrap;
   }
+  .top h1{
+    position: absolute;
+    left: 50px;
+    top: 200px;
+  }
 
   /* ページTOPに戻る */
   .pagetop {
@@ -230,9 +243,117 @@
   }
 
   .top {
-    background-image: url("/static/images/campus3.png");
+    background-image: url("/static/images/campus5.png");
     background-size: cover;
 
+  }
+
+  .image1 {
+    height: 60%;
+    width: 50%;
+    background-size:cover;
+    float:right;
+    position: relative;
+    bottom: 20%;
+    
+  }
+
+  .image1 img{
+    width: 100%;
+    height: 50vw; /* 任意の高さ */
+    object-fit: cover; 
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 10%;
+  }
+
+  .image2 {
+    height: 30%;
+    width: 25%;
+    background-size:cover;
+    float: left;;
+    position: relative;
+    
+  }
+
+  .image2 img{
+    width: 100%;
+    height: 40vw; /* 任意の高さ */
+    object-fit: cover; 
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+  }
+
+  .image3 {
+    width: 35%;
+    height: 20%;
+    background-size:cover;
+    position: relative;
+    float: right;
+  }
+
+  .image3 img{
+    width: 100%;
+    height: 20vw; /* 任意の高さ */
+    object-fit: cover; 
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+  }
+
+  .sentence1{
+    width: 25%;
+    height: 50%;
+    padding-left: 100px;
+    margin-top: 5%;
+  }
+  .sentence1 h3{
+    color: skyblue;
+    
+  }
+
+  .sentence2{
+    width: fit-content;
+    margin: 0 auto;
+    padding-left: 100px;
+    margin-top: 5%;
+    position: relative;
+    
+  }
+  .sentence2 h3{
+    color: skyblue;
+    ;
+  }
+
+  .content h2{
+    color: #333;
+    margin: 0 auto;
+    /* text-align: center; */
+    letter-spacing: 5px;
+    /* text-decoration: underline;
+    text-decoration-color: #009877;
+    border-width: 1px; */
+    animation-name: fadeup;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    font-weight: 200;
+  }
+
+
+
+  #first_title {
+    position: relative;
+    font-size: 80px;
+    margin-top: 7%;
+    padding-left: 100px;
+  }
+
+  #second_title{
+    margin: 0 auto;
+    font-size: 60px;
+    width: fit-content;
+    
   }
 
   footer {
@@ -243,15 +364,14 @@
     display: inline-block;
   }
 
-  /* .openSidebarMenu{
-    display: none;
-  }
+ 
 
   .sidebarIconToggle{
-    display: none;
-  } */
+    top: 85px;
+    right: 70px;
+  }
 
-  #sidebarMenu {
+  /* #sidebarMenu {
     position: fixed;
     right: 0;
     width: 20% !important;
@@ -260,24 +380,35 @@
     transition: transform 250ms ease-in-out;
     margin-left: 0px;
     /* background-color: gray; */
-    /* background: linear-gradient(-45deg, #404040, #bfbfbf); */
+    /* background: linear-gradient(-45deg, #404040, #bfbfbf); 
     z-index: 70;
     height: 100% !important;
+  } */
+
+  .sidebarbrock{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    text-align: center;
   }
 
-  .top-header {
+  .sidebarMenuInner li a {
+    font-size: 50px;
+  }
+
+  
+
+  /* .top-header {
     display: none;
-  }
-  header {
-    height: 100px;
-  }
+  } */
+  
 
   .menu{
-    font-size: 20px;
-    margin-top: 20px;
-    color: lightgray;
+    font-size: 18px;
+    margin-top: 80px;
+    color: whitesmoke;
     position: fixed;
-    left: 50px;
+    right: 120px;
   }
 
   /* label > div{
@@ -288,17 +419,12 @@
     display: none;
   } */
 
-  header > h1 {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
 
-  .header {
-    font-size: 17px;
-  }
+  
+
 
   .description {
-    height: 500px;
+    height: auto;
   }
 
   .cp_actab {
@@ -309,8 +435,9 @@
   .middle{
     /* background-image: url("/static/images/campus3.png");
     background-size: cover; */
-    background-color: lightgreen;
+    background-color: transparent;
     height: 250px;
     padding: 0em;
   }
 }
+

@@ -2,8 +2,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500&amp;family=Noto+Sans+JP:wght@100;200;300;400;500&amp;display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500&amp;family=Noto+Sans+JP:wght@100;200;300;400;500&amp;display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
         <title>九州情報大学Q&A</title>
         <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
@@ -13,49 +15,82 @@
     </head>
 
     <body>
-        <p class="menu">MENU</p>
+        <div class="cursor"></div>
+        <div class="follower"><p class="view">View</p></div>
+        <!-- <p class="menu">MENU</p> -->
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-        <label for="openSidebarMenu" class="sidebarIconToggle">
+        <label for="openSidebarMenu" class="sidebarIconToggle index_menu" id="hover">
             <div class="spinner diagonal part-1"></div>
             <div class="spinner horizontal"></div>
             <div class="spinner diagonal part-2"></div>
         </label>
         
         <div id="sidebarMenu">
-            <ul class="sidebarMenuInner">
-                <li id=title><a href="/index">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></a></li>
-                <li><a href="/index#faq">よくある質問</a></li>
-                <li><a href="/qalist">記事一覧</a></li>
-                <li><a href="/school_info">学生生活について</a></li>
-                <li><a>LINE(KIISbot)</a></li>
-            </ul>
+            <div class="sidebarbrock">
+                <ul class="sidebarMenuInner">
+                    <li id=title><a href="/index">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></a></li>
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/qalist">All articles</a></li>
+                    <!-- <li><a href="/school_info"></a></li> -->
+                    <li><a>LINE(KIIS BOT)</a></li>
+                </ul>
+            </div>
+            <div class="sidebarbrock">
+                <h2>KIIS BOT</h2>
+            </div>
         </div>
+        <header class="index_header">
+            <ul class="header_menu">
+                <li><a href="/index">Home</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/qalist">All articles</a></li>
+                <!-- <li><a href="/school_info"></a></li> -->
+                <li><a>LINE(KIIS BOT)</a></li>
+            </ul>
+                
+        </header>
         
         <div class="top">
             <!-- <p class="topp">Kyushu Institute of Information Sciences 
                 Frequently Asked Questions</p> -->
-            <h1>KIIS FAQ</h1>
-            <a href="#bottom"><span></span></a>
+            <h1 class="title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h1>
+            <!-- <a href="#bottom"><span></span></a> -->
         </div>
+        <!-- <div class="middle">
+
+        </div> -->
         <div class="description"　>
-            <div class="content" id="bottom">
-                <h2>こちらは九州情報大学のQ&Aサイトです！</h2>
-                <p class="moji">九州情報大学のPCクリニックでよく質問を受ける内容についてまとめました。
-                    PCを使っていて困ったらこのサイトを見て参考にしてみてください！また、わからないことや自分で解決できないことがあれば
-                    PCクリニックに来て、相談してください。一緒に問題を解決できるようにスタッフが対応します！
-                </p>
+            <div class="content">
+                <h2 id="first_title">FAQ</h2>
+                <div class="image1"><img src="/static/images/keyboard.png" alt="keyboard"></div>
+                <div class="sentence1">
+                    <h3>よくある質問</h3>
+                    <p>九州情報大学では一人一台PCを使用していますが、設定や使用するソフトなどわからないことも多いと思います。</p>
+                    <p>そこでPCクリニックでよく受ける質問について回答をまとめました。</p>
+                    <a class="read" href="/faq"><div class="circle"><span class="arrow"></span></div><div class="read_p">READ MORE</div></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="image2"><img src="/static/images/room.png" alt="room"></div>
+                <h2 id="second_title">All articles</h2>
+                <div class="sentence2">
+                    <h3>全ての記事</h3>
+                    <P>九州情報大学ネットワーク利用ガイドラインの内容を中心に<br>
+                        PCのセットアップやネットワークの設定など詳しく<br>
+                        記載したものをまとめています。</P>
+                        <a class="read" href="/qalist"><div class="circle"><span class="arrow"></span></div><div class="read_p">READ MORE</div></a>
+                </div>
+                <div class="image3"><img src="/static/images/desk.png" alt="desk"></div>
             </div>
         </div>
-        <div class="middle">
-
-        </div>
-        <h2 id=faq>よくある質問</h2>
+        <!-- <h2 id=faq>よくある質問</h2>
         <h2 id="sub">PCの設定</h2>
         <div class="cp_qa">
             <div class="cp_actab">
                 <input id="cp_tabfour021" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
-                <label for="cp_tabfour021">PCのsetupの方法を教えてください。</label>
+                <label for="cp_tabfour021" id="hover">PCのsetupの方法を教えてください。</label>
                 <div class="cp_actab-content"><p><a href="{{url_for('setup')}}">こちら</a>にsetupの方法一覧が記載してあるので参考にしてください。また、初回の情報リテラシーの授業時に
                     渡されたSurfin'the Internet via Kiis-Net (九州情報大学ネットワーク利用ガイドライン)にも同じ内容
                 が記載してあります。</p></div>
@@ -63,7 +98,7 @@
             <div class="cp_actab">
                 <input id="cp_tabfour022" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
-                <label for="cp_tabfour022">ウイルス対策ソフト何を使うべきですか？</label>
+                <label for="cp_tabfour022" id="hover">ウイルス対策ソフト何を使うべきですか？</label>
                 <div class="cp_actab-content">特に指定はありません。PCCにてインストールできるウイルスバスターのほか、個人で使用しているものでも構いません。
                     大学で使用するPCには必ずウイルス対策ソフトをインストールしてください。<a href="{{url_for('virusbuster_pcc')}}"><p>ウイルスバスターのインストール手順はこちら（PCCメンバー限定）</p></a>
                 </div>
@@ -71,13 +106,13 @@
             <div class="cp_actab">
                 <input id="cp_tabfour023" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
-                <label for="cp_tabfour023">webメールの使い方を教えてください。</label>
+                <label for="cp_tabfour023" id="hover">webメールの使い方を教えてください。</label>
                 <div class="cp_actab-content">こちらに詳しく記載しています。ブラウザでアクセスがうまくいかない場合はGoogle chromeを使用してください。</div>
             </div>
             <div class="cp_actab">
                 <input id="cp_tabfour024" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
-                <label for="cp_tabfour024">shareフォルダの作成方法を教えてください</label>
+                <label for="cp_tabfour024" id="hover">shareフォルダの作成方法を教えてください</label>
                 <div class="cp_actab-content">デスクトップで右クリック→新規作成→ショートカット→「¥¥svr260007¥share」を入力→
                     （ユーザー名:kiisnw¥z学籍番号　パスワード:ネットワークのパスワード）を入力　で作成できます。
                 </div>
@@ -88,7 +123,7 @@
             <div class="cp_actab">
                 <input id="cp_tabfour025" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
-                <label for="cp_tabfour025">Officeをインストールしたいです。</label>
+                <label for="cp_tabfour025" id="hover">Officeをインストールしたいです。</label>
                 <div class="cp_actab-content">Officeのインストールは学生個人ではできません。PCクリニックで対応しているので
                     PCクリニックでスタッフに相談してください。<a href="{{url_for('office_pcc')}}"><p>Officeのインストール手順はこちら（PCCメンバー限定）</p></a>
                 </div>
@@ -97,27 +132,33 @@
             <div class="cp_actab">
                 <input id="cp_tabfour026" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
-                <label for="cp_tabfour026">Officeの画面でIDとパスワードの入力を求める画面が消えません。</label>
+                <label for="cp_tabfour026" id="hover">Officeの画面でIDとパスワードの入力を求める画面が消えません。</label>
                 <div class="cp_actab-content">Officeのインストールは学生個人ではできません。PCクリニックで対応しているので
                     PCクリニックでスタッフに相談してください。<a href="{{url_for('office_pcc')}}"><p>Officeのインストール手順はこちら（PCCメンバー限定）</p></a>
                 </div>
             </div>
-        </div>
+        </div> -->
     <!-- ページトップへ戻るボタン -->
     <p class="pagetop" style="display: block;">
     <a href="#">
     <i class="fas fa-chevron-up"></i>
     </a>
     </p>
-    <footer>
-        <h1>KIIS FAQ</h1>
-        <div class='header'><a href="/index#faq">よくある質問</a></div>
-        <div class='header'><a href="/qalist">記事一覧</a></div>
-        <div class='header'><a href="/school_info">学生生活について</a></div>
-        <div class='header'><a>LINE(KIISbot)</a></div>
-    </footer>
+    <div class="wrapper_footer">
+        <footer>
+        <ul class="footer_menu">
+            <li><a href="/index">Home</a></li>
+            <li><a href="/index#faq">FAQ</a></li>
+            <li><a href="/qalist">All articles</a></li>
+            <!-- <li><a href="/school_info"></a></li> -->
+            <li><a>LINE(KIIS BOT)</a></li>
+        </ul>
+        </footer>
+    </div>
+        
   
     </body>
     <script src="/static/js/change.js"></script>
     <script src="/static/js/main.js"></script>
+    <script src="/static/js/index.js"></script>
 </html>

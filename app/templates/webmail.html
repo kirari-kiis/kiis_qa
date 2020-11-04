@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="left"></div>
+<div class="main">
+    <h2>Web Mail サービスの利用方法</h2>
+    <hr class="cp_hr05" />
+    
+    <div class="block">
+        <h4>①Web Mailとは</h4>
+        <p>Webブラウザで利用することができるE-Mailシステムで、送られてきたメールの閲覧や、新規メッセージの作成・送信などをWebブラウザで行うことができます。
+            通常のメールと違って全てのメッセージをサーバー側で管理するため、どこからでもメールをチェックしたり過去のメールを参照したりできるのが特徴です。
+            本学では、学外からメールをチェックするためにWeb Mailサービスを提供しています。</p>
+    </div>
+
+    <div class="block">
+        <h4>②Web Mailの利用方法</h4>
+        <p>Webブラウザ(Internet Explorerなど)を起動させて、アドレスバーに以下のURLを入力し、Enterキーを押します。</p>
+        <div class="imgbox2">
+            <img src="/static/images/webmail/webmail1.png" alt="webmail1">
+        </div>
+        <p>下の青画面がログイン画面です。ユーザー名とパスワードを入力し、サーバーをKIIS Student’s Mail Serverを選択してログインボタンをクリックします。
+            デフォルトの言語は日本語なので、変更したい場合は変更してログインしてください。</p>
+            <div class="imgbox2">
+                <img src="/static/images/webmail/webmail2.png" alt="webmail2">
+            </div>
+    </div>
+
+    <div class="block">
+        <h4>③受信メールの表示、返信、削除</h4>
+        <p>ログインした後は、メールを読んだり送ったりできます。下の図は受信箱の中です。読みたいメールをクリックします。この例では下の「新着メールテスト」というメールを読んでみることにします。</p>
+        <div class="imgbox2">
+            <img src="/static/images/webmail/webmail3.png" alt="webmail3">
+        </div>
+        <p>メールは以下のように表示されます。削除をクリックすると、このメールを削除できます。返信をクリックすると、このメールに対して返信することができます。</p>
+        <div class="imgbox2">
+            <img src="/static/images/webmail/webmail4.png" alt="webmail4">
+        </div>
+    </div>
+
+    <div class="block">
+        <h4>④新規メールの作成</h4>
+        <p>新しくメールを書く場合は下の図の新規メールをクリックします。</p>
+        <div class="imgbox2">
+            <img src="/static/images/webmail/webmail5.png" alt="webmail5">
+        </div>
+        <p>「新規メール」の場合は下の図のようになります。返信をクリックした場合は、「相手のメールアドレス」が自動的に入っています。
+            添付ファイルも送ることができます。画面の下の方のファイルを選択をクリックし、ファイルを選ぶことでファイルを添付することができます。<br>
+            全ての入力が終わったら、メールの送信ボタンをクリックします。
+            </p>
+            <div class="imgbox">
+                <img src="/static/images/webmail/webmail6.png" alt="webmail6">
+            </div>
+    </div>
+
+    <div class="block">
+        <h4>⑤ログアウト</h4>
+        <p>全ての処理が終わったら、ログアウトをクリックして、必ずログアウトするようにしてください。</p>
+        <div class="imgbox2">
+            <img src="/static/images/webmail/webmail7.png" alt="webmail7">
+        </div>
+        <p>以上が、基本的なWeb Mailサービスの操作です。</p>
+        <p>G Suite for Educationが利用可能となったため、こちらも参考にしてください</p>
+        <a href="{{url_for('gsuite')}}">九州情報大学G Suite for Educationについて</a>
+    </div>
+
+    <div class="block">
+        <h4>メール転送設定</h4>
+        <p>「z学籍番号@std.kiis.ac.jp」のメールアドレスに届いたメールの転送設定は自由に行うことができます。このページでは各自でメール転送設定を
+            行う方法を示します。
+            例として、[ z1234567@std.kiis.ac.jp ]に届いたメールを別のメールアカウントに転送しています。
+            </p>
+        <ol type="1">
+            <li>次のURLにアクセスします。</li>
+            <div class="imgbox">
+                <img src="/static/images/webmail/webmail7.png" alt="webmail7">
+            </div>
+            <li>転送を行いたいメールアドレスのユーザー名、パスワード、転送先アドレスを入力してください。入力が終わったら、 設定実行ボタンをクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/webmail/webmail8.png" alt="webmail8">
+            </div>
+            <p>※メールをサーバーに残す場合は、メールをサーバーに残すにチェックを入れてください。</p>
+            <div class="imgbox">
+                <img src="/static/images/webmail/webmail9.png" alt="webmail9">
+            </div>
+            <p>この場合、サーバーに残ったメールの容量が大きくなりすぎないように、定期的に学内からメールを受信するようにしてください。</p>
+            <li>以下のような画面が表示されたら成功です。あとは、適当に自分宛にメールを送り、各自で転送先に配信されていることを確認してください。</li>
+            <div class="imgbox">
+                <img src="/static/images/webmail/webmail10.png" alt="webmail10">
+            </div>
+        </ol>
+        <p class="red">※注意:転送設定をして、メールアドレスの変更や間違い等でエラーが起きた場合、転送設定を解除します。メールアドレスの間違いや変更し忘れがないように気をつけてください。</p>
+        
+    </div>
+
+</div>
+
+{% endblock %}

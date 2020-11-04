@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="left"></div>
+<div class="main">
+    <h2>パスワード変更後にネットワークが使用できない場合の対処</h2>
+    <div class="block">
+        <ol type="i">
+            <li>スタートボタンをクリックして、プログラムの一覧からWindowsシステムツール、コントロールパネルを順番にクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/nw_miss/nw_miss1.png" alt="nw_miss1">
+            </div>
+            <li>表示方法がカテゴリになっていたら、大きなアイコンか小さなアイコンに変更します。</li>
+            <div class="imgbox">
+                <img src="/static/images/nw_miss/nw_miss2.png" alt="nw_miss2">
+            </div>
+            <li>項目の一覧から、資格情報マネージャーを探してクリックします。</li>
+            <div class="imgbox">
+                <img src="/static/images/nw_miss/nw_miss3.png" alt="nw_miss3">
+            </div>
+            <li>Windows資格情報の中から、svr260007や10.1.11.3などを探して削除します。<br>
+                再起動した後、再度インターネットやshareフォルダに接続すると、ユーザー情報を
+                求められるので新しく設定したパスワードを入力してください。<br>
+                （資格情報マネージャー内に情報がない場合でも、再起動することで接続可能になることがあります。）
+                </li>
+        </ol>
+    </div>
+</div>
+
+{% endblock %}

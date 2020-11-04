@@ -34,6 +34,11 @@ def index():
 def qalist():
     return render_template("qalist.html")
 
+#「/faq」へアクセスがあった場合に、「faq.html」を返す  
+@app.route("/faq")
+def faq():
+    return render_template("faq.html")
+
 #「/nw_info」へアクセスがあった場合に、「nw_info.html」を返す  
 @app.route("/nw_info")
 def nw_info():
@@ -91,6 +96,23 @@ def setup():
 def share():
     return render_template("share.html")
 
+#「/nwdrive」へアクセスがあった場合に、「nwdrive.html」の文字列を返す
+@app.route("/nwdrive")
+def nwdrive():
+    return render_template("nwdrive.html")
+
+
+#「/nw_password」へアクセスがあった場合に、「nw_password.html」の文字列を返す
+@app.route("/nw_password")
+def nw_password():
+    return render_template("nw_password.html")
+
+#「/nw_miss」へアクセスがあった場合に、「nw_miss.html」の文字列を返す
+@app.route("/nw_miss")
+def nw_miss():
+    return render_template("nw_miss.html")
+
+
 #「/wifi_win」へアクセスがあった場合に、「wifi_win.html」の文字列を返す
 @app.route("/wifi_win")
 def wifi_win():
@@ -115,6 +137,11 @@ def wifi_android():
 @app.route("/outlook")
 def outlook():
     return render_template("outlook.html")
+
+#「/webmail」へアクセスがあった場合に、「webmail.html」の文字列を返す
+@app.route("/webmail")
+def webmail():
+    return render_template("webmail.html")
 
 #「/gsuite」へアクセスがあった場合に、「gsuite.html」の文字列を返す
 @app.route("/gsuite")
