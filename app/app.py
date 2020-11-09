@@ -49,11 +49,6 @@ def nw_info():
 def kiisnw():
     return render_template("kiisnw.html")
 
-#「/school_info」へアクセスがあった場合に、「school_info.html」を返す  
-@app.route("/school_info")
-def school_info():
-    return render_template("school_info.html")
-
 #「/install_std」へアクセスがあった場合に、「install_std.html」の文字列を返す
 @app.route("/install_std")
 def install_std():
