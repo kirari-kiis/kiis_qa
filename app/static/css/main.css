@@ -59,10 +59,16 @@ h4{
 .pc h1 {
   margin-top: 100px;
 }
+.main > h1{
+  font-size: 80px;
+  color: #333;
+  letter-spacing: 5px;
+  font-weight: 200;
+}
 
 .main > h2 {
   color: whitesmoke;
-  background-color: #009877;
+  background-color: skyblue;
   font-size: 30px;
   margin: 0 auto;
   text-align: center;
@@ -107,7 +113,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #009877;
+  background-color: skyblue;
   z-index: 9999;
   pointer-events: none;
   right: 100%;
@@ -120,7 +126,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #009877;
+  background-color: skyblue;
   z-index: 9999;
   pointer-events: none;
   left: 100%;
@@ -142,7 +148,7 @@ body > div {
   align-items: center;
   justify-content: center;
   /* height: 100vh; */
-  padding: 5%;
+  /* padding: 5%; */
 }
 /* .parallax-bg {
     background-image: url('/static/images/campus.jpg');
@@ -265,7 +271,7 @@ body > div {
 }
 
 .head {
-  color: #009877;
+  color: skyblue;
   padding-top: 100px;
 }
 
@@ -277,7 +283,7 @@ footer h1 {
   font-size: 40px;
   margin-top: 20px;
   text-decoration: underline;
-  text-decoration-color: #009877;
+  text-decoration-color: skyblue;
   border-width: 1px;
 }
 
@@ -298,7 +304,7 @@ footer a::after {
   content: "";
   width: 0;
   height: 2px;
-  background-color: #009877;
+  background-color: skyblue;
   transition: 0.3s;
   transform: translateX(-50%);
 }
@@ -320,7 +326,7 @@ footer a {
   content: "";
   width: 0;
   height: 2px;
-  background-color: #009877;
+  background-color: skyblue;
   transition: 0.3s;
   transform: translateX(-50%);
 }
@@ -328,7 +334,7 @@ footer a {
 .ans a:hover::after {
   width: 100%;
 }
-.ans a {
+.ans li a {
   color: black;
   position: relative;
   display: inline-block;
@@ -336,12 +342,16 @@ footer a {
   text-decoration: none;
 }
 
+.ans li{
+  color: skyblue;
+}
+
 a > li {
   font-size: 20px;
 }
 
 .subtitle {
-  border-bottom: solid 2px #009877;
+  border-bottom: solid 2px skyblue;
   color: #333;
   display: inline-block;
 }
@@ -427,13 +437,14 @@ a > li {
 
 #faq {
   color: whitesmoke;
-  background-color: #009877;
+  background-color:skyblue ;
 }
 
 #sub {
   text-decoration: underline;
-  text-decoration-color: #009877;
+  text-decoration-color: skyblue;
   border-width: 1px;
+  color: #333;
 }
 
 
@@ -471,7 +482,7 @@ li{
 
 .anstitle{
   font-size: 20px;
-  background: linear-gradient(transparent 90%, #009877 70%);
+  background: linear-gradient(transparent 90%, skyblue);
   display: inline-block;
 }
 
@@ -581,7 +592,8 @@ header{
 footer{
   width: 100%;
   height: 80%;
-  background-color: #a4ae9c;
+  /* background-color: #a4ae9c; */
+  background-color: #9caeac;
 }
 
 .wrapper_footer{
@@ -651,9 +663,10 @@ footer{
 
 .footer_menu li{
   font-size: 18px;
-    color: whitesmoke;
-    padding-right: 40px;
-    margin-top: 80px;
+  color: whitesmoke;
+  padding-right: 40px;
+  margin-top: 40px;
+  list-style: none;
 }
 
 .footer_menu li a{
@@ -665,4 +678,39 @@ footer{
   color: lightgray;
   text-decoration: none;
 }
+
+.footer_block{
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer_block h2{
+  font-size: 50px;
+  color: whitesmoke;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: 200;
+}
+
+.footer_block h2 span{
+  display: block;
+  font-size: 15px;
+  color: whitesmoke;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+/* svg {
+  fill: currentColor;
+  height: 350px;
+  width: 350px;
+  transform-origin: center;
+  font-family: font-family, Lato,Noto Sans JP,sans-serif;
+  font-weight: 200;
+  display: block;
+  margin: 0 auto;
+} */
 

@@ -25,26 +25,52 @@
             <div class="spinner diagonal part-2"></div>
         </label>
         
-        <div id="sidebarMenu">
-            <div class="sidebarbrock">
-                <ul class="sidebarMenuInner">
-                    <li id=title><a href="/index">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></a></li>
-                    <li><a href="/index">Home</a></li>
-                    <li><a href="/faq">FAQ</a></li>
-                    <li><a href="/qalist">All articles</a></li>
+        <div id="sidebarMenu" class="left">
+            <div class="sidebarbrock1">
+                <h2 class="External_links">External links</h2>
+                <a href="/index">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></a>
+                <ul class="External" >
+                    <li><a href="https://www.kiis.ac.jp/">九州情報大学HP</a></li>
+                    <li><a href="https://kiis-web.campusplan.jp/gakusei/web/CplanMenuWeb/UI/LoginForm.aspx">CampusPlan</a></li>
+                    <li><a href="http://service.kiis.ac.jp/">情報処理室</a></li>
+                    <li><a href="https://kiis.online">出席くん</a></li>
+                    <li><a href="https://www.kiis.ac.jp/gakunai/enkaku">遠隔授業スケジュール</a></li>
                     <!-- <li><a href="/school_info"></a></li> -->
                     <li><a>LINE(KIIS BOT)</a></li>
                 </ul>
             </div>
-            <div class="sidebarbrock">
-                <h2>KIIS BOT</h2>
+            <div class="sidebarbrock2">
+                <h2 class="Internal_links">Internal links</h2>
+                <ul class="sidebarMenuInner" >
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/qalist">All Articles</a></li>
+                    <!-- <li><a href="/school_info"></a></li> -->
+                    <li><a>LINE(KIIS BOT)</a></li>
+                </ul>
+                    <!-- <svg viewBox="0 0 100 100" width="100" height="100">
+                        <defs>
+                        <path id="circle"
+                            d="
+                            M 50, 50
+                            m -37, 0
+                            a 37,37 0 1,1 74,0
+                            a 37,37 0 1,1 -74,0"/>
+                        </defs>
+                        <text font-size="8">
+                        <textPath xlink:href="#circle">
+                            KIIS BOT　KIIS BOT　KIIS BOT　KIIS BOT　KIIS BOT　KIIS BOT
+                        </textPath>
+                        </text>
+                        <div class="image_line"><img src="/static/images/mockup1.png" alt="mockup"></div>
+                    </svg> -->
             </div>
         </div>
         <header class="index_header">
             <ul class="header_menu">
                 <li><a href="/index">Home</a></li>
                 <li><a href="/faq">FAQ</a></li>
-                <li><a href="/qalist">All articles</a></li>
+                <li><a href="/qalist">All Articles</a></li>
                 <!-- <li><a href="/school_info"></a></li> -->
                 <li><a>LINE(KIIS BOT)</a></li>
             </ul>
@@ -64,22 +90,25 @@
             <div class="content">
                 <h2 id="first_title">FAQ</h2>
                 <div class="image1"><img src="/static/images/keyboard.png" alt="keyboard"></div>
+                <h2 id="first_title2">FAQ</h2>
                 <div class="sentence1">
                     <h3>よくある質問</h3>
                     <p>九州情報大学では一人一台PCを使用していますが、設定や使用するソフトなどわからないことも多いと思います。</p>
                     <p>そこでPCクリニックでよく受ける質問について回答をまとめました。</p>
                     <a class="read" href="/faq"><div class="circle"><span class="arrow"></span></div><div class="read_p">READ MORE</div></a>
+                    <div class="button"><a class="read_small" href="/faq"><p>READ MORE</p></a></div>
                 </div>
             </div>
             <div class="content">
                 <div class="image2"><img src="/static/images/room.png" alt="room"></div>
-                <h2 id="second_title">All articles</h2>
+                <h2 id="second_title">All Articles</h2>
                 <div class="sentence2">
                     <h3>全ての記事</h3>
-                    <P>九州情報大学ネットワーク利用ガイドラインの内容を中心に<br>
-                        PCのセットアップやネットワークの設定など詳しく<br>
+                    <P>九州情報大学ネットワーク利用ガイドラインの内容を中心に
+                        PCのセットアップや<br>ネットワークの設定など詳しく
                         記載したものをまとめています。</P>
                         <a class="read" href="/qalist"><div class="circle"><span class="arrow"></span></div><div class="read_p">READ MORE</div></a>
+                        <div class="button"><a class="read_small" href="/qalist"><p>READ MORE</p></a></div>
                 </div>
                 <div class="image3"><img src="/static/images/desk.png" alt="desk"></div>
             </div>
@@ -146,17 +175,19 @@
     </p>
     <div class="wrapper_footer">
         <footer>
-        <ul class="footer_menu">
-            <li><a href="/index">Home</a></li>
-            <li><a href="/index#faq">FAQ</a></li>
-            <li><a href="/qalist">All articles</a></li>
-            <!-- <li><a href="/school_info"></a></li> -->
-            <li><a>LINE(KIIS BOT)</a></li>
-        </ul>
+            <div class="footer_block">
+                <h2 class="footer_title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h2>    
+                <ul class="footer_menu">
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/index#faq">FAQ</a></li>
+                    <li><a href="/qalist">All Articles</a></li>
+                    <!-- <li><a href="/school_info"></a></li> -->
+                    <li><a>LINE(KIIS BOT)</a></li>
+                </ul>
+            </div>
         </footer>
-    </div>
+    
         
-  
     </body>
     <script src="/static/js/change.js"></script>
     <script src="/static/js/main.js"></script>

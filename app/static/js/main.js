@@ -124,8 +124,10 @@ $(window).on('scroll',function(){
 $('.sidebarIconToggle').click(function() {
     if($(this).hasClass('is-active')){
         $(this).removeClass("is-active");
+        $('.spinner').css('background-color','whitesmoke');
     }else{
         $(this).addClass("is-active");
+        $('.spinner').css('background-color','#333');
         $('ul.sidebarMenuInner  li')
         .css({opacity: 0})
         .each(function(i){
