@@ -58,9 +58,9 @@
   }
 
   .top > h1 {
-    font-size: 40px;
+    font-size: 60px;
     position: relative;
-    top: 90;
+    top: 75;
   }
 
   .top > a {
@@ -68,7 +68,7 @@
   }
 
   .top > h1 {
-    letter-spacing: 5px;
+    letter-spacing: 4px;
   }
 
 
@@ -79,7 +79,55 @@
     height: 75%;
   }
 
+  .sidebarbrock1{
+    display: none;
+  }
+
+  .sidebarbrock2{
+    width: 90%;
+    height: 90%;
+    text-align: center;
+  }
+
+  .sidebarMenuInner{
+    margin: 0 auto !important;
+    padding-top: 50px !important;
+  }
+
+  .sidebarMenuInner li{
+    text-align: center !important;
+  }
+
+  .sidebarMenuInner li a{
+    color: whitesmoke !important;
+    text-align: center;
+  }
+
+  .smart_title  span{
+    display: block;
+  font-size: 15px;
+  color: whitesmoke ;
+  letter-spacing: 5px;
+  text-align: center;
+  }
+
+  .internal_links{
+    display: none;
+  }
+
+  .smart_title{
+    color: whitesmoke !important;
+    font-size: 70px;
+    font-weight: 200;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+  }
   
+  .spinner{
+    background-color: whitesmoke !important;
+  }
 
   /* ページTOPに戻る */
   .pagetop {
@@ -151,12 +199,7 @@
     bottom: 25px;
   }
 
-  .sidebarbrock{
-    width: 100%;
-  }
-  .sidebarMenuInner li a {
-    font-size: 40px;
-  }
+
   .follower{
     display: none;
   }
@@ -355,6 +398,14 @@
 
   }
 
+  .sidebar_title{
+    height: fit-content;
+  }
+
+  .smart_title{
+    display: none;
+  }
+
   .image1 {
     height: 60%;
     width: 50%;
@@ -523,6 +574,8 @@
     font-size: 50px;
     color: #333;
   }
+
+  
 
 
   /* .top-header {

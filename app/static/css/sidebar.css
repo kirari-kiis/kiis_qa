@@ -9,7 +9,7 @@
   /* background-color: gray; */
   /* background: linear-gradient(-45deg, #404040, #bfbfbf); */
   /* background-color: #a4ae9c; */
-  /* background-color: #9caeac; */
+  background-color: #9caeac;
   z-index: 70;
   height: 100% !important;
   /* padding: 10px; */
@@ -65,7 +65,7 @@
   cursor: pointer;
   text-decoration: none;
   font-weight: 200;
-  font-size: 33px;
+  font-size: 37px;
 
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
@@ -181,6 +181,6 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   cursor: pointer;
   text-decoration: none;
   font-weight: 200;
-  font-size: 13px;
+  font-size: 17px;
 
 }
