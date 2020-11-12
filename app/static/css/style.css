@@ -305,16 +305,14 @@
     bottom: 0;
     left: 0;
     margin: auto; /*上下左右中央に*/
-    width: 100px; /*widthの指定は必須*/
-    height: 20px; /*heightの指定は必須*/
+    width: 100%; /*widthの指定は必須*/
+    height: auto; /*heightの指定は必須*/
   }
 
   .read_small p{
     color: #333;
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
+    position: relative;
+    text-align: center;
   }
 
   .footer_menu li{
