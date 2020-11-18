@@ -111,7 +111,7 @@
   text-align: center;
   }
 
-  .internal_links{
+  .Internal_links{
     display: none;
   }
 
@@ -635,7 +635,7 @@
   .image_line img{
     margin-top: 0em;
   } */
-  .internal_links{
+  /* .internal_links{
     color: #333;
     font-size: 30px;
     font-weight: 200;
@@ -647,6 +647,28 @@
   }
 
   .external_links{
+    color: #333;
+    font-size: 30px;
+    font-weight: 200;
+    margin: 10px;
+    width: 170px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+  } */
+
+  .Internal_links{
+    color: #333;
+    font-size: 30px;
+    font-weight: 200;
+    margin: 10px;
+    width: 160px;
+    height: auto;
+    position: absolute;
+    bottom: 0em;
+  }
+
+  .External_links{
     color: #333;
     font-size: 30px;
     font-weight: 200;

@@ -47,6 +47,11 @@ h4{
 span{
   font-weight: 300;
 }
+
+#center a {
+  color: skyblue;
+}
+
 @keyframes fadeup {
   from {
     opacity: 0;

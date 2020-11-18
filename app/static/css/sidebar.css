@@ -150,7 +150,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top: -9px;
 }
 
-.external {
+.External {
   margin: auto;
   padding: 0;
   margin: auto;
@@ -161,7 +161,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   /* border-top: 1px solid rgba(255, 255, 255, 0.708); */
 }
 
-.external li {
+.External li {
   list-style: none;
   color: #333;
   
@@ -174,7 +174,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   
 }
 
-.external li a {
+.External li a {
   color: darkgray;
   
   font-weight: bold;
