@@ -143,8 +143,15 @@ def webmail():
 def gsuite():
     return render_template("gsuite.html")
 
+#「/virus」へアクセスがあった場合に、「virus.html」の文字列を返す
+@app.route("/virus")
+def virus():
+    return render_template("virus.html")
 
-
+# linebotの画像用ページ
+@app.route("/line_image")
+def line_image():
+    return render_template("line_image.html")
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))

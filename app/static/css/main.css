@@ -398,6 +398,22 @@ a > li {
   /* background-color: #009877; */
   background-color: #989898;
 }
+
+.cp_actab-content a {
+  /* background-color: #009877; */
+  color: #283593 !important;
+}
+
+.cp_actab-content a::after{
+  /* background-color: #009877; */
+  color: #454e93 !important;
+}
+
+.cp_actab-content a:hover{
+  /* background-color: #009877; */
+  color: #454e93 !important;
+}
+
 .cp_qa label {
   font-size: 1.2em;
   position: relative;
@@ -721,3 +737,12 @@ footer{
   margin: 0 auto;
 } */
 
+.block h2{
+  color: skyblue;
+}
+
+.imgbox_line img{
+  width: 512px;
+  height: 341px;
+  object-fit: cover;
+}

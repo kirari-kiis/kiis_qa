@@ -3,7 +3,7 @@
   left: 0;
   width: 100%;
   margin-top: 0px;
-  transform: translateY(100%);
+  transform: translateX(100%);
   transition: transform 500ms ease-in-out;
   margin-left: 0px;
   /* background-color: gray; */
