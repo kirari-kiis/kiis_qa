@@ -59,7 +59,7 @@
 }
 
 .sidebarMenuInner li a {
-  color: #333;
+  color: whitesmoke;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
@@ -163,7 +163,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 .External li {
   list-style: none;
-  color: #333;
+  color: whitesmoke;
   
   /* font-weight: bold; */
   padding: 10px;
@@ -175,7 +175,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 .External li a {
-  color: darkgray;
+  /* color: darkgray; */
   
   font-weight: bold;
   cursor: pointer;

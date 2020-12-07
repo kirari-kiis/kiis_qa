@@ -235,16 +235,13 @@ body > div {
 .description {
   width: 100%;
   height: 400px;
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
   padding-bottom: 0;
   padding: 0;
+  display: flex;
 }
 
-.content {
-  width: 100%;
-  height: 120%;
-  margin: 0 auto;
-}
+
 
 .content > p {
   color: rgb(81, 100, 101);
@@ -254,13 +251,11 @@ body > div {
 
 
 
-.sentence1 p{
+.sentence p{
   color: #333;
 }
 
-.sentence2 p{
-  color: #333;
-}
+
 
 .ans > li {
   font-size: 20px;
@@ -632,49 +627,6 @@ footer{
 }
 
 
-.circle{
-  margin-top: 10%;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: solid 2px;
-  color: lightgrey !important;
-}
-
-.read_p {
-  margin-top: 10%;
-  width: auto;
-  font-size: 15px;
-  color: lightgrey;
-  padding-left: 20px;
-  letter-spacing: 2px;
-}
-
-.arrow{
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  top: 39px;
-  left: 25px;
-
-}
-
-.arrow::before{
-  content: '';
-  width: 25px;
-  height: 25px;
-  border: 0px;
-  border-top: solid 2px lightgrey;
-  border-right: solid 2px lightgrey;
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -4px;
-}
-
 .read_p_hover{
   color: skyblue;
 }
@@ -741,8 +693,63 @@ footer{
   color: skyblue;
 }
 
+.block p a {
+  color: #283593;
+}
+
+.connect  li{
+  color: #00bcd4;
+}
+.connect ol li {
+  color: #333;
+}
 .imgbox_line img{
   width: 512px;
   height: 341px;
   object-fit: cover;
+}
+
+/* .center_title {
+  font-size: 50px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 200;
+    position: fixed;
+    width: 350px;
+    height: 120px;
+    top:calc(50% - 120px/2);
+    left:calc(50% - 350px/2);
+    
+}
+
+.center_title span{
+  display: block;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.824);
+  letter-spacing: 3px;
+  text-align: center;
+} */
+
+.kiisbot{
+  height: 2000px;
+  width: 100%;
+}
+
+.kiisbot .left{
+  background-color: #1dcd00;
+  z-index: 60;
+}
+
+.kiis_top{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: turquoise;
+  z-index: 1;
+}
+
+.show_top{
+  z-index: 70;
 }

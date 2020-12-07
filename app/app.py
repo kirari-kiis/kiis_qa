@@ -148,6 +148,31 @@ def gsuite():
 def virus():
     return render_template("virus.html")
 
+#「/bootcamp」へアクセスがあった場合に、「bootcamp.html」の文字列を返す
+@app.route("/bootcamp")
+def bootcamp():
+    return render_template("bootcamp.html")
+
+#「/connect」へアクセスがあった場合に、「connect.html」の文字列を返す
+@app.route("/connect")
+def connect():
+    return render_template("connect.html")
+
+#「/webmail_connect」へアクセスがあった場合に、「webmail_connect.html」の文字列を返す
+@app.route("/webmail_connect")
+def webmail_connect():
+    return render_template("webmail_connect.html")
+
+#「/power」へアクセスがあった場合に、「power.html」の文字列を返す
+@app.route("/power")
+def power():
+    return render_template("power.html")
+
+#「/kiisbot」へアクセスがあった場合に、「kiisbot.html」の文字列を返す
+@app.route("/kiisbot")
+def kiisbot():
+    return render_template("kiisbot.html")
+
 # linebotの画像用ページ
 @app.route("/line_image")
 def line_image():
