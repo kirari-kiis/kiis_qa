@@ -15,6 +15,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .arrowWrap{
+    display: none;
+  }
+
   .imgbox{
     height: 200px;
     width: 280px;
@@ -225,7 +229,7 @@
   }
 
   .sentence{
-
+    margin-bottom: 50px;
   }
 
   .button{
@@ -234,6 +238,7 @@
     margin: 10px;
     margin-top: 60px;
     height: 50px;
+    padding-bottom: ;
   }
 
   .content h2{
@@ -263,22 +268,22 @@
     display: none;
   }
 
-  #second_title{
-    margin: 0 auto;
+  #second_title2{
     font-size: 40px;
+    margin: 0 auto;
     width: fit-content;
-    
+    margin-top: 20px;
   }
 
   #third_title{
     display: none;
   }
 
-  #third_title{
-    margin: 0 auto;
+  #third_title2{
     font-size: 40px;
+    margin: 0 auto;
     width: fit-content;
-    
+    margin-top: 20px;
   }
 
   .read{
@@ -724,6 +729,19 @@
   }
 }
 
+.stickarrow {
+  width: 90px;
+  height: 8px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  transform: skew(45deg);
+  margin-left: 10px;
+}
+
+  .fixed{
+    position: fixed;
+    top: 0;
+  }
 }
 
 
