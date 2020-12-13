@@ -609,7 +609,7 @@ header{
 
 footer{
   width: 100%;
-  height: 80%;
+
   /* background-color: #a4ae9c; */
   background-color: #9caeac;
 }
@@ -734,13 +734,23 @@ footer{
 } */
 
 .kiisbot{
-  height: 2000px;
+  height: 8000px;
   width: 100%;
+  display: flex;
 }
+
+
 
 .kiisbot .left{
   background-color: #1dcd00;
-  z-index: 60;
+  /* z-index: 60; */
+  height: 8000px;
+}
+
+.kiisbot .right{
+  background-color: #d9d9c0;
+  /* z-index: 60; */
+  height: 8000px;
 }
 
 .kiis_top{

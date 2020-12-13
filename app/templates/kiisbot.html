@@ -2,21 +2,38 @@
 {% block content %}
 
 <div class="kiisbot">
-        <div class="kiis_top start">
+        <!-- <div class="kiis_top start">
 
         </div>
-        <div class="end"></div>
+        <div class="end"></div> -->
         <div class="left">
-            <div class="thumbnail" id="thum1">
-                <img src="/static/images/faq.png" alt="faq">
+            <div class="kiis_thumbnail" id="kiis_thum_top">
+                <img src="/static/images/mockup_top.png" alt="faq">
             </div>
 
-            <div class="thumbnail" id="thum2">
-                <img src="/static/images/allarticle.png" alt="faq">
+            <div class="kiis_thumbnail" id="kiis_thum1">
+                <!-- <img src="/static/images/mockup_top.png" alt="faq"> -->
+            </div>
+
+            <div class="kiis_thumbnail" id="kiis_thum2">
+                <!-- <img src="/static/images/allarticle.png" alt="faq"> -->
             </div>
         </div>
         <div class="right">
-            <div class="content" id="co1">
+            <div class="content" id="kiisbot_title">
+                <img id="line_text" src="/static/images/line_text.png" alt="faq">
+                <h1 id="main_title">KIIS BOT<span>九州情報大学LINEアカウント</span></h1>
+                <div class="line_add"><a href="https://lin.ee/v2tG7jE"><p>友達追加はこちら</p></a></div>
+                <div class="arrowWrap">
+                    <div class="arrow">
+                        <span></span>
+                        <p>scroll</p>
+                    </div>
+                </div>
+                <!-- <p>QRコード</p><img src="https://qr-official.line.me/sid/M/426vzlzt.png"> -->
+                <!-- <h1 class="center_title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h1> -->
+            </div>
+            <div class="content" id="kiis_co1">
                 <h3>九州情報大学LINEアカウント</h3>
                 <h2 id="kiis_first_title">KIISBOT</h2>
                 <div class="sentence">
@@ -27,7 +44,7 @@
                 </div>
                 <!-- <h1 class="center_title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h1> -->
             </div>
-            <div class="content" id="co2">
+            <div class="content" id="kiis_co2">
                 <h2 id="second_title">はじめに</h2>
                 <div class="sentence">
                     
@@ -36,16 +53,51 @@
                     <p>こちらは九州情報大学専用のLINEアカウントとなっています。在学生以外の方にこのアカウントを教えないようにしてください。</p>
                 </div>
             </div>
-            <div class="content" id="co3">
+            <div class="content" id="kiis_co3">
                 <h2 id="second_title">使い方</h2>
                 <div class="sentence">
-                    <p>主に使う項目についてはメニューにまとめています。</p>
-                    <p>メニューボタン</p>
+                    <p>KIIS BOTの利用方法を説明します。</p>
+                    <p>九州情報大学の大学生活において便利な機能を用意しています。</p>
+                </div>
+                <!-- <h1 class="center_title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h1> -->
+            </div>
+            <div class="content" id="kiis_co4">
+                <h2 id="second_title">質問</h2>
+                <div class="sentence">
+                    <p>KIIS BOTはPCクリニックに代わってPCのトラブルに回答します。</p>
+                    <p>質問はメニューの左下のボタンからできます。</p>
+                </div>
+                <!-- <h1 class="center_title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h1> -->
+            </div>
+            <div class="content" id="kiis_co5">
+                
+                <div class="sentence">
+                    <p>ボタンの他に直接質問をすることもできます。</p>
+                    <p>以下の例のような質問をしてみてください</p>
+                    <h4>例</h4>
+                    <p>ネットワークに接続できない</p>
+                    <p>パソコンの電源が入らない</p>
+                </div>
+                <!-- <h1 class="center_title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h1> -->
+            </div>
+            <div class="content" id="kiis_co6">
+                <h2 id="second_title">メニュー</h2>
+                <div class="sentence">
+                    <p>主に学校生活で使用するものはメニューにまとめています。</p>
+                    <p>それぞれのボタンを押して利用してください</p>
+                </div>
+                <!-- <h1 class="center_title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h1> -->
+            </div>
+            <div class="content" id="kiis_co7">
+                <h2 id="second_title">スクールバス運行表</h2>
+                <div class="sentence">
+                    <p>スクールバス運行表のボタンからは３つの選択支が送信されます。</p>
+                    <p>時刻表の他、大学発と太宰府駅発の直近のバスの時刻を教えてくれます。</p>
                 </div>
                 <!-- <h1 class="center_title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h1> -->
             </div>
         </div>
 
 </div>
-
+<script src="/static/js/kiisbot.js"></script>
 {% endblock %}

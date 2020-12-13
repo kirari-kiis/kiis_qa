@@ -19,7 +19,7 @@
     <body class="is-slide" id="page-animate">
         <div class="cursor"></div>
         <div class="follower"><p class="view">View</p></div>
-        <p class="menu">MENU</p>
+        <!-- <p class="menu">MENU</p> -->
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle" id="hover">
             <div class="spinner diagonal part-1" id="common_menu"></div>
@@ -85,12 +85,25 @@
         {% block content %}{% endblock %}
         <script src="/static/js/change.js"></script>
         <script src="/static/js/main.js"></script>
-        <script src="/static/js/kiisbot.js"></script>
     </div>
     <p class="pagetop" style="display: block;">
         <a href="#">
         <i class="fas fa-chevron-up"></i>
         </a>
         </p>
+
+    <div class="wrapper_footer">
+        <footer>
+            <div class="footer_block">
+                <h2 class="footer_title">KIIS FAQ <span>九州情報大学Q＆Aサイト</span></h2>    
+                <ul class="footer_menu">
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/index#faq">FAQ</a></li>
+                    <li><a href="/qalist">All Articles</a></li>
+                    <!-- <li><a href="/school_info"></a></li> -->
+                    <li><a>LINE(KIIS BOT)</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

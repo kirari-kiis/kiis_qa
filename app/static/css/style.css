@@ -360,6 +360,7 @@
     display: flex;
     padding: 0em;
     flex-wrap: wrap;
+    height: 2000px;
   }
   .top h1{
     position: absolute;
@@ -564,6 +565,7 @@
 
   .footer_block{
     margin-top: 70px;
+    padding-bottom: 100px;
   }
 
   /* .image_line{
@@ -670,6 +672,20 @@
     width: inherit;
   }
 
+  .kiis_thumbnail{
+    width: 40%;
+    height: 50%;
+    margin: 30px;
+    position: fixed;
+    top: calc(50% - 380px/2);
+    left: 13%;
+  }
+
+  .kiis_thumbnail img {
+    width: inherit;
+    border-radius: 30px;
+  }
+
   /* アニメーション設定 */
 
 .arrow {
@@ -689,7 +705,7 @@
   left: 50%; */
 }
 .arrow p{
-  font-size: 30;
+  font-size: 30px;
   margin-left: 40px;
 }
 
@@ -742,6 +758,48 @@
     position: fixed;
     top: 0;
   }
+
+  #main_title{
+    color: #333;
+    font-size: 75px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+  }
+
+  #main_title span {
+    display: block;
+    font-size: 15px;
+    color: #333;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  #line_text{
+    margin-top: 70px;
+    width: inherit;
+  }
+
+  .line_add{
+    width: 250px;
+    height: 50px;
+    background-color: #1dcd00;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .line_add p{
+    color: whitesmoke;
+    margin: 0 auto;
+    width: fit-content;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 3px;
+
+  }
+
 }
 
 

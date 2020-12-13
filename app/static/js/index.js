@@ -35,11 +35,11 @@ if (window.matchMedia( "(min-width: 768px)" ).matches) {
     jQuery(function($){
         $(window).on('scroll', function(){
             if ($(window).scrollTop() > 600 && $(window).scrollTop() < 1100) {
-                $('#co1').fadeIn(400);
-                $('#thum1').fadeIn(400);
+                $('#co1').fadeIn(100);
+                $('#thum1').fadeIn(100);
             } else {
-                $('#co1').fadeOut(400);
-                $('#thum1').fadeOut(400);
+                $('#co1').fadeOut(100);
+                $('#thum1').fadeOut(100);
             }
             });
         });
@@ -47,11 +47,11 @@ if (window.matchMedia( "(min-width: 768px)" ).matches) {
     jQuery(function($){
         $(window).on('scroll', function(){
             if ($(window).scrollTop() > 1500 && $(window).scrollTop() < 2000) {
-                $('#co2').fadeIn(400);
-                $('#thum2').fadeIn(400);
+                $('#co2').fadeIn(100);
+                $('#thum2').fadeIn(100);
             } else {
-                $('#co2').fadeOut(400);
-                $('#thum2').fadeOut(400);
+                $('#co2').fadeOut(100);
+                $('#thum2').fadeOut(100);
             } 
             });
         });
@@ -59,11 +59,11 @@ if (window.matchMedia( "(min-width: 768px)" ).matches) {
     jQuery(function($){
         $(window).on('scroll', function(){
             if ($(window).scrollTop() > 2400 && $(window).scrollTop() < 2900) {
-                $('#co3').fadeIn(400);
-                $('#thum').fadeIn(400);
+                $('#co3').fadeIn(100);
+                $('#thum').fadeIn(100);
             } else {
-                $('#co3').fadeOut(400);
-                $('#thum3').fadeOut(400);
+                $('#co3').fadeOut(100);
+                $('#thum3').fadeOut(100);
             } 
             });
         });
