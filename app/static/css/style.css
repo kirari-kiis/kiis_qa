@@ -808,6 +808,19 @@
     border-radius: 30px;
   }
 
+  #thum3{
+    width: 40%;
+    height: 50%;
+    margin: 30px;
+    position: fixed;
+    top: calc(50% - 520px/2);
+    left: 12%;
+  }
+
+  #thum3 img{
+    border-radius: 30px;
+  }
+
   #kiis_thum2 {
     margin-top: 80px;
   }

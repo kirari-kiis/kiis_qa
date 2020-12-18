@@ -60,7 +60,7 @@ if (window.matchMedia( "(min-width: 768px)" ).matches) {
         $(window).on('scroll', function(){
             if ($(window).scrollTop() > 2400 && $(window).scrollTop() < 2900) {
                 $('#co3').fadeIn(200);
-                $('#thum').fadeIn(200);
+                $('#thum3').fadeIn(200);
             } else {
                 $('#co3').fadeOut(200);
                 $('#thum3').fadeOut(200);
