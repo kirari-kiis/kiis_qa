@@ -180,7 +180,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 17px;
 
 }
