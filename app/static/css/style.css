@@ -783,6 +783,7 @@
 
   .thumbnail{
     width: 60%;
+    max-width: 860px;
     height: 30%;
     margin: 30px;
     position: fixed;
@@ -796,6 +797,7 @@
 
   .kiis_thumbnail{
     width: 40%;
+    max-width: 610px;
     height: 50%;
     margin: 30px;
     position: fixed;
@@ -810,15 +812,20 @@
 
   #thum3{
     width: 40%;
+    max-width: 630px;
     height: 50%;
     margin: 30px;
     position: fixed;
     top: calc(50% - 520px/2);
-    left: 12%;
+    left: 14%;
   }
 
   #thum3 img{
     border-radius: 30px;
+  }
+
+  #kiis_thum_top{
+    max-width: 610px;
   }
 
   #kiis_thum2 {
@@ -827,40 +834,45 @@
 
   #kiis_thum4 {
     margin-top: 0px;
+    max-width: 670px;
   }
 
   #kiis_thum5 {
     width: 50%;
+    max-width: 830px;
     height: 50%;
     margin: 30px;
     position: fixed;
     top: calc(50% - 400px/2);
-    left: 10%;
+    left: 11%;
     margin-top: 0;
   }
 
   #kiis_thum6{
     margin-top: 0;
+    max-width: 670px;
   }
 
 
 
   #kiis_thum1 {
     width: 63%;
+    max-width: 1050px;
     height: 50%;
     margin: 30px;
     position: fixed;
     top: calc(50% - 400px/2);
-    left: 3%;
+    left: 5%;
   }
 
   #kiis_thum3{
     width: 45%;
+    max-width: 750px;
     height: 50%;
     margin: 30px;
     position: fixed;
     top: calc(50% - 380px/2);
-    left: 12%;
+    left: 13%;
     margin-top: 0;
 }
 
@@ -1008,7 +1020,9 @@
   }
 
   #co1, #co2, #co3{
-    width: 358px;
+    width: 25%;
+    min-width: 358px;
+    
   }
 
   
@@ -1019,3 +1033,9 @@
 
 
 
+@media screen and (min-width: 16000px) {
+  .content{
+    top: calc(50% - 330px/2);
+    right: 14%;
+  }
+}
