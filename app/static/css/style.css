@@ -1033,9 +1033,13 @@
 
 
 
-@media screen and (min-width: 16000px) {
+@media screen and (min-width: 1600px) {
   .content{
     top: calc(50% - 330px/2);
     right: 14%;
+  }
+
+  .thumbnail{
+    left: 8%;
   }
 }
