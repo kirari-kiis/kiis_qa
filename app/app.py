@@ -173,10 +173,17 @@ def power():
 def kiisbot():
     return render_template("kiisbot.html")
 
+#「/input¥」へアクセスがあった場合に、「input¥.html」の文字列を返す
+@app.route("/input¥")
+def input():
+    return render_template("input¥.html")
+
 # linebotの画像用ページ
 @app.route("/line_image")
 def line_image():
     return render_template("line_image.html")
+
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
